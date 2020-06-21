@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html lang="ru_RU">
+    <head>
+        <title>Select file to upload</title>
+        <link rel="stylesheet" type="text/css" href="../static/styles/style.css">
+    </head>
+
+    <body>
+        <div class="contentHolder">
+            <div class="selectHolder">
+                <div class="selectors">
+                    <div class="fileSelect">
+                        <label for="choose_image_button">
+                                <div>
+                                    Select file to upload
+                                </div>
+                            </label>
+                        <div class="selectFileWrapper">
+                            <button class="btn">Upload a file</button>
+                            <input type="file"/>
+                        </div>
+                        <button id="resize_image_button">Resize image</button>
+                    </div>
+
+                    <div class="parametersSelect">
+                        <div class="sliderAndValue">
+                            <input type="text" id="text_width">
+                            <input type="range" id="range_width" min="1" max="9999" oninput="text_width.value=range_width.value">
+                            <span>W</span>
+                        </div>
+                        <div class="sliderAndValue">
+                            <input type="text" id="text_height">
+                            <input type="range" id="range_height" min="1" max="9999" oninput="text_height.value=range_height.value">
+                            <span>H</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

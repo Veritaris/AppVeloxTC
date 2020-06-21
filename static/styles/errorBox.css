@@ -1,0 +1,17 @@
+.errorBox {
+    position: fixed;
+    margin: 0 auto;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+    align-content: center;
+}
+
+.errorMessage {
+    font: 20px Arial;
+    overflow-wrap: break-word;
+}

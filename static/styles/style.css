@@ -1,0 +1,92 @@
+body {
+    /*background-color: #25274d;*/
+    z-index: -1;
+    margin: 0;
+}
+
+.contentHolder {
+    position: fixed;
+    padding: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    z-index: 1;
+}
+
+.selectHolder {
+    /*display: inline;*/
+    /*background: chocolate;*/
+    position: fixed;
+    top:25%;
+    left: 30%;
+    width: 40%;
+    min-height: 200px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    font: 20px Arial;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    align-content: center;
+}
+
+.selectors {
+    display: flex;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fileSelect {
+    text-align: left;
+    /*background: red;*/
+}
+
+.parametersSelect {
+    display: inline;
+    /*background: green;*/
+}
+
+.sliderAndValue {
+    font: 12px Arial;
+}
+
+#resize_image_button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    width: 200px;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.selectFileWrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.btn {
+    background-color: #2196F3;
+    width: 200px;
+    border: none;
+    color: white;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.selectFileWrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
