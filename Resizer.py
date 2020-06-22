@@ -35,4 +35,4 @@ def upload_image():
         return "This is not allowed, sorry"
 
 
-config = load_config("config.env")
+config = load_config("environment.env")

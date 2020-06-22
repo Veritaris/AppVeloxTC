@@ -66,6 +66,10 @@ body {
     border-radius: 5px;
 }
 
+#resize_image_button:hover {
+    background-color: forestgreen;
+}
+
 .selectFileWrapper {
     position: relative;
     overflow: hidden;
@@ -81,6 +85,14 @@ body {
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.selectFileWrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }
 
 .selectFileWrapper input[type=file] {
