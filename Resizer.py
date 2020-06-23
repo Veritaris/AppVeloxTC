@@ -24,7 +24,7 @@ def get_status(order_id):
 
 
 def is_file_allowed(filename):
-    return '.' in filename and filename.rsplit('.', 1)[1].lower() in config.list("allowed_extentions")
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in config.list("allowed_extensions")
 
 
 def upload_image():
