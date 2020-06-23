@@ -30,9 +30,13 @@ def is_file_allowed(filename):
 def upload_image():
     if request.method == "POST":
         file = str(request.files.items)
-        return "ok"
+        return file
     else:
         return "This is not allowed, sorry"
+
+
+def show_resized_images():
+    return None
 
 
 config = load_config("environment.env")
