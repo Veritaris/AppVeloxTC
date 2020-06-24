@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches: 
+      - master
+      - release/*
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+        
+    steps:
+      - name: start deploy script via ssh
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          command: ./deploy.sh
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          privateKey: ${{ secrets.KEY }}
+
+
+#  ![CI](https://github.com/Veritaris/AppVeloxTC/workflows/CI/badge.svg?branch=master)
