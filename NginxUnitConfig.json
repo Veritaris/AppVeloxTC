@@ -9,7 +9,9 @@
 			"type" : "python 3.7",
 			"path" : "/home/ubuntu/AppVeloxTC/",
 			"home" : "/home/ubuntu/AppVeloxTC/venv/",
-			"module": "wsgi"
+			"module": "wsgi",
+			"user": "ubuntu",
+			"group": "ubuntu"
 		}
 	}
 }

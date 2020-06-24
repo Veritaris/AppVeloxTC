@@ -15,8 +15,9 @@ def load_config(path: str):
     return env
 
 
-config = load_config("environment.env")
-secret = load_config("secrets.env")
+cwd = os.getcwd()
+config = load_config(f"{cwd}/environment.env")
+secret = load_config(f"{cwd}/secrets.env")
 
 
 def get_status(order_id):
@@ -52,7 +53,7 @@ def upload_image():
             return redirect(request.url)
         if file and is_file_allowed(file.filename):
             filename = secure_filename(file.filename)
-            file.save(os.path.join(config.str('upload_folder'), filename))
+            file.save(os.path.join(cwd, config.str('upload_folder'), filename))
             return redirect(url_for('upload_image',
                                     filename=filename))
         if not is_file_allowed(file.filename):
