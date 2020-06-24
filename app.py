@@ -1,19 +1,27 @@
 from flask import Flask, render_template, request
+import os
 import Resizer
 
 config = Resizer.config
+secret = Resizer.secret
 app = Flask(__name__)
-app.config["UPLOAD_FOLDER"] = str("upload_folder")
+app.config["UPLOAD_FOLDER"] = config.str("upload_folder")
+app.config["SECRET_KEY"] = secret.str("secret_key")
 
 
-@app.route("/")
+@app.route("/", methods=["GET"])
 def hello_world():
     return render_template("index.html")
 
 
-@app.route("/images", methods=["POST"])
+@app.route("/upload", methods=["POST"])
 def upload_image():
     return Resizer.upload_image()
+
+
+@app.route("/upload", methods=["GET"])
+def show_upload():
+    return Resizer.show_upload()
 
 
 @app.route("/images", methods=["GET"])
@@ -21,7 +29,7 @@ def show_resized_images():
     return Resizer.show_resized_images()
 
 
-@app.route("/images/<int:order_id>", methods=["GET"])
+@app.route("/upload/<int:order_id>", methods=["GET"])
 def show_status(order_id):
     return Resizer.get_status(order_id)
 

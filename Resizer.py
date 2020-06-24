@@ -1,8 +1,9 @@
 from werkzeug.utils import secure_filename
-from flask import request
+from flask import request, redirect, url_for, render_template, flash
 from envparse import Env
 from flask import json
 import sqlite3
+import os
 
 
 def load_config(path: str):
@@ -12,6 +13,10 @@ def load_config(path: str):
     )
     env.read_envfile(path)
     return env
+
+
+config = load_config("environment.env")
+secret = load_config("secrets.env")
 
 
 def get_status(order_id):
@@ -28,15 +33,26 @@ def is_file_allowed(filename):
 
 
 def upload_image():
-    if request.method == "POST":
-        file = str(request.files.items)
-        return file
-    else:
-        return "This is not allowed, sorry"
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            flash('No file part')
+            return redirect(request.url)
+        file = request.files['file']
+        if file.filename == '':
+            flash('No selected file')
+            return redirect(request.url)
+        if file and is_file_allowed(file.filename):
+            print(file.filename)
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(config.str('upload_folder'), filename))
+            return redirect(url_for('upload_image',
+                                    filename=filename))
+    return "uploaded"
 
 
 def show_resized_images():
     return None
 
 
-config = load_config("environment.env")
+def show_upload():
+    return "ok"

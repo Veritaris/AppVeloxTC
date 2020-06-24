@@ -1,4 +1,5 @@
 .errorBox {
+    display: inline-block;
     position: fixed;
     margin: 0 auto;
     top: 25%;
@@ -12,6 +13,15 @@
 }
 
 .errorMessage {
+    display: inline-block;
     font: 20px Arial;
     overflow-wrap: break-word;
+}
+
+.errorBox img {
+    margin-bottom: 5px;
+    margin-left: 25px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 50px;
 }
