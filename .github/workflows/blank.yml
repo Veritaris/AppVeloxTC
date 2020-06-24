@@ -16,7 +16,7 @@ jobs:
           command: ls -a
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
-          password: ${{ secrets.KEY }}
+          privateKey: ${{ secrets.KEY }}
 
 
 #  ![CI](https://github.com/Veritaris/AppVeloxTC/workflows/CI/badge.svg?branch=master)
