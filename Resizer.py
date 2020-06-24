@@ -42,7 +42,6 @@ def upload_image():
             flash('No selected file')
             return redirect(request.url)
         if file and is_file_allowed(file.filename):
-            print(file.filename)
             filename = secure_filename(file.filename)
             file.save(os.path.join(config.str('upload_folder'), filename))
             return redirect(url_for('upload_image',
