@@ -1,10 +1,18 @@
+import unittest
 import requests
+import app as app_to_test
 import os
 import sys
 
 testImagesDir = os.path.join(os.path.curdir, "testImages")
 uploadsDir = os.path.join(os.path.curdir, "uploads")
 url = sys.argv[1]
+
+
+class TestFlaskApp(unittest.TestCase):
+    def setUp(self) -> None:
+        app_to_test.config["TESTING"] = True
+        self.app = app_to_test.app.test_client()
 
 
 def upload_image(file):
