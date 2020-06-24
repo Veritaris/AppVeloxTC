@@ -19,7 +19,7 @@ def upload_image(file):
         files = {
             "file": f
         }
-        p = requests.post(f"{url}/upload", files=files)
+        p = requests.post(f"{url}/upload", files=files, verify=False)  # Setting verifying ssl to false because of self-signed cerificate
         return p.status_code, p.content
 
 
@@ -60,5 +60,5 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         url = sys.argv[1]
     else:
-        url = "http://127.0.0.1:5000"
+        url = "https://167.71.58.132"
     test_upload()

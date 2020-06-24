@@ -29,10 +29,19 @@ def get_status(order_id):
 
 
 def is_file_allowed(filename):
+    """
+
+    :param filename:
+    :return:
+    """
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in config.list("allowed_extensions")
 
 
 def upload_image():
+    """
+
+    :return:
+    """
     if request.method == 'POST':
         if 'file' not in request.files:
             flash('No file part')
@@ -52,8 +61,16 @@ def upload_image():
 
 
 def show_resized_images():
+    """
+
+    :return:
+    """
     return None
 
 
 def show_upload():
+    """
+
+    :return:
+    """
     return "ok"

@@ -2,8 +2,8 @@ from flask import Flask, render_template, request
 import os
 import Resizer
 
-config = Resizer.config
-secret = Resizer.secret
+config = Resizer.load_config("environment.env")
+secret = Resizer.load_config("secrets.env")
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = config.str("upload_folder")
 app.config["SECRET_KEY"] = secret.str("secret_key")
