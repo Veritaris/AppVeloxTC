@@ -47,6 +47,8 @@ def upload_image():
             file.save(os.path.join(config.str('upload_folder'), filename))
             return redirect(url_for('upload_image',
                                     filename=filename))
+        if not is_file_allowed(file.filename):
+            return "Wrong file extension", 403
     return "uploaded"
 
 
