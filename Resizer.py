@@ -15,10 +15,6 @@ def load_config(path: str):
     return env
 
 
-config = load_config("environment.env")
-secret = load_config("secrets.env")
-
-
 def get_status(order_id):
     """
     Get resize order status from DB and return it's value
