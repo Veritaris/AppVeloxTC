@@ -10,17 +10,6 @@
         <div class="contentHolder">
             <div class="selectHolder">
 
-{#                <form action="/upload" method="post" enctype="multipart/form-data">#}
-{#                    <div>#}
-{#                        <p>#}
-{#                            <input type="file" name="file">#}
-{#                        </p>#}
-{#                        <p>#}
-{#                            <input type="submit" value="Send">#}
-{#                        </p>#}
-{#                    </div>#}
-{#                </form>#}
-
                 <form action="/upload" method="post" id="imageToResize" enctype="multipart/form-data">
                     <div class="selectors">
 
@@ -39,13 +28,13 @@
 
                         <div class="parametersSelect">
                             <div class="sliderAndValue">
-                                <input type="text" id="text_width" inputmode="numeric">
-                                <input type="range" id="range_width" min="1" max="9999" name="w" oninput="text_width.value=range_width.value">
+                                <input type="text" id="text_width" inputmode="numeric" name="w">
+                                <input type="range" id="range_width" min="1" max="9999" oninput="text_width.value=range_width.value">
                                 <span>W</span>
                             </div>
                             <div class="sliderAndValue">
-                                <input type="text" id="text_height" inputmode="numeric">
-                                <input type="range" id="range_height" min="1" max="9999" name="h" oninput="text_height.value=range_height.value">
+                                <input type="text" id="text_height" inputmode="numeric" name="h">
+                                <input type="range" id="range_height" min="1" max="9999" oninput="text_height.value=range_height.value">
                                 <span>H</span>
                             </div>
                         </div>

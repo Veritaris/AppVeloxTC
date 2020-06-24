@@ -1,8 +1,8 @@
-from werkzeug.utils import secure_filename
 from flask import request, redirect, url_for, render_template, flash
+from werkzeug.utils import secure_filename
 from envparse import Env
 from flask import json
-import sqlite3
+from PIL import Image
 import os
 
 
@@ -48,17 +48,26 @@ def upload_image():
             flash('No file part')
             return redirect(request.url)
         file = request.files['file']
+        w, h = request.form["w"], request.form["h"]
         if file.filename == '':
             flash('No selected file')
             return redirect(request.url)
         if file and is_file_allowed(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(cwd, config.str('upload_folder'), filename))
+            resize_image(file, int(w), int(h))
             return redirect(url_for('upload_image',
                                     filename=filename))
         if not is_file_allowed(file.filename):
             return "Wrong file extension", 403
     return "uploaded"
+
+
+def resize_image(image, width, height):
+    im = Image.open(image)
+    resized_image = im.resize((width, height))
+    resized_image.save(f"{cwd}/resizedImages/{secure_filename(image.filename)}")
+    return None
 
 
 def show_resized_images():
