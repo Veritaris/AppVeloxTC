@@ -52,8 +52,8 @@ def upload_image():
         if file.filename == '':
             flash('No selected file')
             return redirect(request.url)
-        if file and is_file_allowed(file.filename):
-            filename = secure_filename(file.filename)
+        filename = str(secure_filename(file.filename)).lower()
+        if file or is_file_allowed(file.filename):
             file.save(os.path.join(cwd, config.str('upload_folder'), filename))
             resize_image(file, int(w), int(h))
             return redirect(url_for('upload_image',
@@ -64,9 +64,10 @@ def upload_image():
 
 
 def resize_image(image, width, height):
-    im = Image.open(image)
-    resized_image = im.resize((width, height))
-    resized_image.save(f"{cwd}/resizedImages/{secure_filename(image.filename)}")
+    print(f"""File: {image.filename}, w: {width}, h: {height}""")
+    # im = Image.open(image)
+    # resized_image = im.resize((width, height))
+    # resized_image.save(f"{cwd}/resizedImages/{secure_filename(image.filename)}")
     return None
 
 

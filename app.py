@@ -5,6 +5,7 @@ config = Resizer.config
 secret = Resizer.secret
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = config("upload_folder")
+app.config['MAX_CONTENT_LENGTH'] = 32 * 2048 * 2048
 app.config["SECRET_KEY"] = secret("secret_key")
 
 
