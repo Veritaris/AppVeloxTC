@@ -1,6 +1,8 @@
 from flask import request, redirect, url_for, render_template, flash
 from werkzeug.utils import secure_filename
 from multiprocessing import Process
+from multiprocessing import Lock
+from datetime import datetime
 from envparse import Env
 from flask import json
 from PIL import Image
@@ -49,14 +51,19 @@ def upload_image():
             flash('No file part')
             return redirect(request.url)
         file = request.files['file']
-        w, h = request.form["w"], request.form["h"]
+        if request.form.get("width") and request.form.get("height"):
+            w, h = request.form["width"], request.form["height"]
+        else:
+            return "Not enough data to resize, sorry", 413
+
         if file.filename == '':
             flash('No selected file')
             return redirect(request.url)
         if file and is_file_allowed(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(cwd, config.str('upload_folder'), filename))
-            resize_image(file, int(w), int(h))
+            resize_thread = Process(target=resize_image, args=(file, int(w), int(h)))
+            resize_thread.start()
             return redirect(url_for('upload_image',
                                     filename=filename))
         if not is_file_allowed(file.filename):
@@ -68,6 +75,7 @@ def resize_image(image, width, height):
     im = Image.open(image)
     resized_image = im.resize((width, height))
     resized_image.save(f"{cwd}/resizedImages/{secure_filename(image.filename)}")
+    print(f"Finished at {datetime.utcnow()}")
     return None
 
 
