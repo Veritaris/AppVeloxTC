@@ -6,6 +6,7 @@ secret = Resizer.secret
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = config("upload_folder")
 app.config["SECRET_KEY"] = secret("secret_key")
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
 
 @app.route("/", methods=["GET"])
