@@ -21,7 +21,7 @@ for _dir in [uploadsDir, resizedImagesDir]:
 class TestFlaskApp(unittest.TestCase):
     def setUp(self) -> None:
         app_to_test.config["TESTING"] = True
-        self.app = app_to_test.app.test_client()
+        self.app = app.test_client()
 
 
 def upload_image(file):

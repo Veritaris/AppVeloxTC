@@ -1,26 +1,18 @@
 from flask import request, redirect, url_for, render_template, flash
 from werkzeug.utils import secure_filename
 from multiprocessing import Process
+from DatabaseModels import Images
 from multiprocessing import Lock
+from Database import database
 from datetime import datetime
 from envparse import Env
 from flask import json
 from PIL import Image
+import Config
 import os
 
-
-def load_config(path: str):
-    env = Env(
-        upload_folder=str,
-        allowed_extention=list
-    )
-    env.read_envfile(path)
-    return env
-
-
-cwd = os.getcwd()
-config = load_config(f"{cwd}/environment.env")
-secret = load_config(f"{cwd}/secrets.env")
+cwd = Config.cwd
+config = Config.config
 
 
 def get_status(order_id):

@@ -2,11 +2,11 @@ from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from datetime import datetime
-import Resizer
+import Config
 
-config = Resizer.config
-secret = Resizer.secret
-cwd = Resizer.cwd
+config = Config.config
+secret = Config.secret
+cwd = Config.cwd
 
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = config("upload_folder")
@@ -18,19 +18,8 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 database = SQLAlchemy(app)
 migrate = Migrate(app, database)
 
-
-class Images(database.Model):
-    __tablename__ = "Images"
-    id = database.Column(database.Integer, primary_key=True)
-    dateUploaded = database.Column(database.Date, index=True, unique=True, default=datetime.utcnow)
-    imageFileName = database.Column(database.String(128), index=True, unique=True)
-    sizeFrom = database.Column(database.String(32), index=True, unique=True)
-    sizeTo = database.Column(database.String(32))
-    resizeStatus = database.Column(database.String(8), index=True, unique=False)
-
-    def __repr__(self):
-        return '<Upload date: {}>'.format(self.dateUploaded)
-
+import DatabaseModels
+import Resizer
 
 @app.route("/", methods=["GET"])
 def hello_world():
