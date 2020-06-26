@@ -7,6 +7,7 @@ from Database import database
 from datetime import datetime
 from envparse import Env
 from flask import json
+from uuid import uuid4
 from PIL import Image
 import Config
 import os
@@ -53,14 +54,27 @@ def upload_image():
             return redirect(request.url)
         if file and is_file_allowed(file.filename):
             filename = secure_filename(file.filename)
-            file.save(os.path.join(cwd, config.str('upload_folder'), filename))
+            save_image(file)
+
             resize_thread = Process(target=resize_image, args=(file, int(w), int(h)))
             resize_thread.start()
+
             return redirect(url_for('upload_image',
                                     filename=filename))
         if not is_file_allowed(file.filename):
             return "Wrong file extension", 403
     return "uploaded"
+
+
+def save_image(file):
+    filename = secure_filename(file.filename)
+    ext = filename.split(".")[-1]
+    file.save(
+        os.path.join(
+            cwd, config.str('upload_folder'),
+            f"{str(uuid4().hex)}.{ext}"
+        )
+    )
 
 
 def resize_image(image, width, height):

@@ -21,6 +21,7 @@ migrate = Migrate(app, database)
 import DatabaseModels
 import Resizer
 
+
 @app.route("/", methods=["GET"])
 def hello_world():
     return render_template("index.html")
