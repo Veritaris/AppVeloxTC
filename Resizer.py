@@ -1,23 +1,19 @@
 from flask import request, redirect, url_for, render_template, flash
 from werkzeug.utils import secure_filename
+from multiprocessing import Process
+from DatabaseModels import Images
+from multiprocessing import Lock
+from Database import database
+from datetime import datetime
 from envparse import Env
 from flask import json
+from uuid import uuid4
 from PIL import Image
+import Config
 import os
 
-
-def load_config(path: str):
-    env = Env(
-        upload_folder=str,
-        allowed_extention=list
-    )
-    env.read_envfile(path)
-    return env
-
-
-cwd = os.getcwd()
-config = load_config(f"{cwd}/environment.env")
-secret = load_config(f"{cwd}/secrets.env")
+cwd = Config.cwd
+config = Config.config
 
 
 def get_status(order_id):
@@ -48,14 +44,21 @@ def upload_image():
             flash('No file part')
             return redirect(request.url)
         file = request.files['file']
-        w, h = request.form["w"], request.form["h"]
+        if request.form.get("width") and request.form.get("height"):
+            w, h = request.form["width"], request.form["height"]
+        else:
+            return "Not enough data to resize, sorry", 413
+
         if file.filename == '':
             flash('No selected file')
             return redirect(request.url)
-        filename = str(secure_filename(file.filename)).lower()
-        if file or is_file_allowed(file.filename):
-            file.save(os.path.join(cwd, config.str('upload_folder'), filename))
-            resize_image(file, int(w), int(h))
+        if file and is_file_allowed(file.filename):
+            filename = secure_filename(file.filename)
+            save_image(file)
+
+            resize_thread = Process(target=resize_image, args=(file, int(w), int(h)))
+            resize_thread.start()
+
             return redirect(url_for('upload_image',
                                     filename=filename))
         if not is_file_allowed(file.filename):
@@ -63,11 +66,22 @@ def upload_image():
     return "uploaded"
 
 
+def save_image(file):
+    filename = secure_filename(file.filename)
+    ext = filename.split(".")[-1]
+    file.save(
+        os.path.join(
+            cwd, config.str('upload_folder'),
+            f"{str(uuid4().hex)}.{ext}"
+        )
+    )
+
+
 def resize_image(image, width, height):
-    print(f"""File: {image.filename}, w: {width}, h: {height}""")
-    # im = Image.open(image)
-    # resized_image = im.resize((width, height))
-    # resized_image.save(f"{cwd}/resizedImages/{secure_filename(image.filename)}")
+    im = Image.open(image)
+    resized_image = im.resize((width, height))
+    resized_image.save(f"{cwd}/resizedImages/{secure_filename(image.filename)}")
+    print(f"Finished at {datetime.utcnow()}")
     return None
 
 
