@@ -1,27 +1,17 @@
-from flask import request, redirect, url_for, render_template, flash
+from flask import request, redirect, render_template, flash
 from DatabaseModels import ProcessedImages, Images, database
 from werkzeug.utils import secure_filename
 from multiprocessing import Process
-from multiprocessing import Lock
-from datetime import datetime
-from flask import json
+from flask import jsonify
 from uuid import uuid4
 from PIL import Image
 import Config
+import json
 import os
 
 cwd = Config.cwd
 config = Config.config
 session = database.session
-
-
-def get_status(order_id):
-    """
-    Get resize order status from DB and return it's value
-    :param order_id:
-    :return order status
-    """
-    return f"Status of {order_id}"
 
 
 def is_file_allowed(filename):
@@ -38,7 +28,8 @@ def upload_image():
     Uploading image to server and resizing it.
     Uploads image to /upload folder and write it name to database if succeed.
     After starts to resize it in the background using multiprocessing.Process
-    :return http status 200
+    :return http status 200 on succeed, 403 if file is not image and 413 if width, height or file
+    was not provided
     """
     if request.method == 'POST':
         # check if request contains a file
@@ -72,7 +63,6 @@ def upload_image():
                     "uploaded_image.html",
                     imageID=imageID,
                     downloadURL=f"./uploads/{internal_filename}")
-                # return f"{imageID}", 200
 
         if not is_file_allowed(file.filename):
             return "Wrong file extension", 403
@@ -83,9 +73,9 @@ def upload_image():
 def save_image(file, filename):
     """
     Save image to /uploads folder
-    :param file:
-    :param filename:
-    :return:
+    :param file: file from form
+    :param filename: string
+    :return: True and internal filename if succeed, 500 error if something went wrong
     """
     ext = filename.split(".")[-1]
     internal_filename = f"{str(uuid4().hex)}.{ext}"
@@ -133,17 +123,33 @@ def resize_image(image, width, height, filename, imageID):
     return None
 
 
-def show_resized_images():
+def show_resized_images(image_id):
     """
+    Show all images in database as json or image with specified id if given
+    :return: json object of image with image_id or all images if image_id == None
+    """
+    if image_id:
+        image = database.session.query(ProcessedImages).get(image_id)
+        if image:
+            return jsonify(image.serialize), 200
+        else:
+            return f"No image with index {image_id}", 404
+    else:
+        return jsonify({
+            "images": [
+                json.dumps(x.serialize) for x in session.query(ProcessedImages).all()
+            ]
+        }), 200
 
+
+def delete_image(image_id):
+    """
+    Delete image on sever and from database if given password was correct
+    :param image_id:
     :return:
     """
+    image = database.session.query(ProcessedImages).get(image_id)
+    if not image:
+        return f"No image with index {image_id}", 404
+    password = request.form.get("password")
     return None
-
-
-def show_upload():
-    """
-
-    :return:
-    """
-    return "ok", 200

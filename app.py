@@ -33,18 +33,18 @@ def upload_image():
 
 
 @app.route("/upload", methods=["GET"])
-def show_upload():
-    return Resizer.show_upload()
-
-
-@app.route("/images", methods=["GET"])
 def show_resized_images():
-    return Resizer.show_resized_images()
+    return Resizer.show_resized_images(None)
 
 
-@app.route("/upload/<int:order_id>", methods=["GET"])
-def show_status(order_id):
-    return Resizer.get_status(order_id)
+@app.route("/upload/<int:image_id>", methods=["GET"])
+def show_status(image_id):
+    return Resizer.show_resized_images(image_id)
+
+
+@app.route("/upload/<int:image_id>", methods=["DELETE"])
+def delete_image(image_id):
+    return Resizer.delete_image(image_id)
 
 
 @app.errorhandler(404)
