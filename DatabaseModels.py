@@ -11,31 +11,30 @@ def dump_datetime(value):
 class Images(database.Model):
     __tablename__ = "Images"
     id = database.Column(database.Integer(), primary_key=True, autoincrement=True)
-    imageFileName = database.Column(database.String(128), index=True, unique=True)
+    deleteImagePassword = database.Column(database.String(16), unique=True)
 
     def __repr__(self):
-        return f"<Image id: {self.id}, filename: {self.imageFileName} >"
+        return f"<Image id: {self.id}>"
 
     @property
     def serialize(self):
         return {
-            "id": self.id,
-            "imageFileName": self.imageFileName
+            "id": self.id
         }
 
 
 class ProcessedImages(database.Model):
     __tablename__ = "ProcessedImages"
-    id = database.Column(database.Integer(), primary_key=True)
-    dateUploaded = database.Column(database.DateTime(), index=True, default=datetime.utcnow)
-    imageFileName = database.Column(database.String(64), index=True, unique=True)
-    sizeFrom = database.Column(database.String(32), index=True)
+    id = database.Column(database.Integer(), primary_key=True, unique=True)
+    dateUploaded = database.Column(database.DateTime(), default=datetime.utcnow)
+    imageFileName = database.Column(database.String(64), unique=True)
+    sizeFrom = database.Column(database.String(32))
     sizeTo = database.Column(database.String(32))
-    resizeStatus = database.Column(database.String(8), index=True)
-    downloadFileURL = database.Column(database.String(128), index=True, unique=True)
+    resizeStatus = database.Column(database.String(8))
 
     def __repr__(self):
-        return f"<Id: {self.id}, date uploaded: {self.dateUploaded}, download link: {self.downloadFileURL}>"
+        return f"<Id: {self.id}, date uploaded: {self.dateUploaded}, " \
+               f"download link: /static/resizedImages/{self.imageFileName}>"
 
     @property
     def serialize(self):
@@ -46,5 +45,5 @@ class ProcessedImages(database.Model):
             "sizeFrom": self.sizeFrom,
             "sizeTo": self.sizeTo,
             "resizeStatus": self.resizeStatus,
-            "downloadFileURL": self.downloadFileURL
+            "downloadFileURL": f"/static/resizedImages/{self.imageFileName}>"
         }

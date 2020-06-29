@@ -1,10 +1,13 @@
-from flask import request, redirect, render_template, flash
 from DatabaseModels import ProcessedImages, Images, database
+from werkzeug.exceptions import RequestEntityTooLarge
+from flask import request, render_template
 from werkzeug.utils import secure_filename
 from multiprocessing import Process
 from flask import jsonify
 from uuid import uuid4
 from PIL import Image
+import logging
+import random
 import Config
 import json
 import os
@@ -12,9 +15,14 @@ import os
 cwd = Config.cwd
 config = Config.config
 session = database.session
+logging.basicConfig(
+    format="%(levelname)-8s [%(asctime)s] %(message)s",
+    level=logging.INFO,
+    filename="./logs/info.log",
+)
 
 
-def is_file_allowed(filename):
+def is_file_allowed(filename: str) -> bool:
     """
     Check for file extension to be an image in .png or .jpg/.jpeg
     :param filename: string, filename with extension
@@ -28,46 +36,67 @@ def upload_image():
     Uploading image to server and resizing it.
     Uploads image to /upload folder and write it name to database if succeed.
     After starts to resize it in the background using multiprocessing.Process
-    :return http status 200 on succeed, 403 if file is not image and 413 if width, height or file
+    :return http status 200 on succeed, 415 if file is not image and 413 if width, height or file
     was not provided
     """
-    if request.method == 'POST':
-        # check if request contains a file
-        if 'file' not in request.files:
-            flash('No file part')
-            return redirect(request.url)
+    try:
+        file = request.files.get("file")
+    except RequestEntityTooLarge:
+        logging.warning(f"User tried to upload file, but it was too large.")
+        return jsonify({"error": "File is too large"}), 413
+    if not file:
+        logging.warning(f"User tried to upload file, but didn't provide a file.")
+        return jsonify({"error": "No file to resize"}), 400
 
-        file = request.files['file']
+    width, height = request.form.get("width"), request.form.get("height")
+    if not (width and height):
+        logging.warning(f"User tried to upload file, but didn't provide width or height.")
+        return jsonify({"error": "Not enough data to resize"}), 400
+    width, height = map(int, (width, height))
 
-        # check if request contains width and height to resize
-        if request.form.get("width") and request.form.get("height"):
-            width, height = request.form["width"], request.form["height"]
-        else:
-            return "Not enough data to resize, sorry", 413
+    try:
+        assert width in range(1, 10000)
+    except AssertionError:
+        logging.warning(f"User tried to upload file, but provided not allowed width")
+        return jsonify({"error": f"Wrong width: {width} is not in range 1..9999"}), 400
 
-        if file and is_file_allowed(file.filename):
-            filename = secure_filename(file.filename)
-            save_result = save_image(file, filename)
+    try:
+        assert width in range(1, 10000)
+    except AssertionError:
+        logging.warning(f"User tried to upload file, but provided not allowed height")
+        return jsonify({"error": f"Wrong width: {width} is not in range 1..9999"}), 400
 
-            if save_result[0]:
-                internal_filename = save_result[1]
-                image = Images(imageFileName=internal_filename)
-                session.add(image)
-                session.commit()
-                imageID = image.id
+    if file and is_file_allowed(file.filename):
+        filename = secure_filename(file.filename)
+        save_result = save_image(file, filename)
 
-                resize_thread = Process(target=resize_image, args=(file, int(width), int(height), internal_filename, imageID))
-                resize_thread.start()
+        if save_result[0]:
+            internal_filename = save_result[1]
+            password = random.random().hex().split(".")[-1][:8]
+            image = Images(
+                deleteImagePassword=password)
+            session.add(image)
+            session.commit()
+            imageID = image.id
 
-                return render_template(
-                    "uploaded_image.html",
-                    imageID=imageID,
-                    downloadURL=f"./uploads/{internal_filename}")
+            resize_thread = Process(
+                target=resize_image,
+                args=(file, int(width), int(height), internal_filename, imageID)
+            )
+            resize_thread.start()
 
-        if not is_file_allowed(file.filename):
-            return "Wrong file extension", 403
+            return jsonify(
+                {
+                    "imageID": imageID,
+                    "password": password,
+                    "downloadURL": f"/static/resizedImages{internal_filename.split('.')[0]}_"
+                                   f"{width}x{height}.{internal_filename.split('.')[-1]}"
+                }
+            ), 202
 
-    return "uploaded", 200
+    if not is_file_allowed(file.filename):
+        logging.warning(f"User tried to upload file, but it was not a png/jpg image.")
+        return jsonify({"error": "Wrong file extension"}), 415
 
 
 def save_image(file, filename):
@@ -88,7 +117,9 @@ def save_image(file, filename):
             )
         )
     except Exception as e:
-        return "Sorry, file was not uploaded because of internal error", 500
+        logging.error(f"Error while tried to save file {internal_filename}")
+        return jsonify({"error": "Sorry, file was not uploaded because of internal error"}), 500
+    logging.info(f"Uploaded file {internal_filename}")
     return True, internal_filename
 
 
@@ -108,7 +139,7 @@ def resize_image(image, width, height, filename, imageID):
     resized_image = im.resize((width, height))
     filename_without_ext, ext = filename.split(".")
     filename = f"{filename_without_ext}_{width}x{height}.{ext}"
-    resized_image.save(f"{cwd}/resizedImages/{filename}")
+    resized_image.save(f"{cwd}/static/resizedImages/{filename}")
 
     processed_image = ProcessedImages(
         id=imageID,
@@ -116,10 +147,10 @@ def resize_image(image, width, height, filename, imageID):
         sizeFrom=f"{size_from[0]}x{size_from[1]}",
         sizeTo=f"{width}x{height}",
         resizeStatus="Succeed",
-        downloadFileURL=f"./uploads/{filename}"
     )
     session.add(processed_image)
     session.commit()
+    logging.info(f"Resized file {filename}")
     return None
 
 
@@ -131,15 +162,22 @@ def show_resized_images(image_id):
     if image_id:
         image = database.session.query(ProcessedImages).get(image_id)
         if image:
+            logging.info(f"User requested file {image.imageFileName}")
             return jsonify(image.serialize), 200
         else:
-            return f"No image with index {image_id}", 404
+            logging.warning(f"User requested file with id {image_id}, but it does not exists.")
+            return jsonify({"error": f"No image with index {image_id} or it was deleted"}), 404
     else:
-        return jsonify({
-            "images": [
-                json.dumps(x.serialize) for x in session.query(ProcessedImages).all()
-            ]
-        }), 200
+        if database.session.query(ProcessedImages).all():
+            logging.info(f"User requested all images")
+            return jsonify({
+                "images": [
+                    json.dumps(x.serialize) for x in session.query(ProcessedImages).all()
+                ]
+            }), 200
+        else:
+            logging.warning(f"User requested all images, but there is to one yet.")
+            return jsonify({"error": "No images in database yet or they were deleted"}), 200
 
 
 def delete_image(image_id):
@@ -148,8 +186,29 @@ def delete_image(image_id):
     :param image_id:
     :return:
     """
-    image = database.session.query(ProcessedImages).get(image_id)
-    if not image:
-        return f"No image with index {image_id}", 404
+    image_images = session.query(Images).get(image_id)
+    image_processed_images = session.query(ProcessedImages).get(image_id)
+
+    if not image_images:
+        return jsonify({"error": f"No image with index {image_id} or it was deleted"}), 404
+
     password = request.form.get("password")
-    return None
+
+    image_delete_password = session.query(Images).get(image_id).deleteImagePassword
+    image_filename = image_processed_images.imageFileName
+
+    if password == image_delete_password:
+        os.remove(f"{cwd}/static/resizedImages/{image_filename}")
+        os.remove(f"{cwd}/static/uploads/{image_filename.split('_')[0]}.{image_filename.split('.')[-1]}")
+        session.delete(image_images)
+        session.delete(image_processed_images)
+        session.commit()
+
+    return jsonify({"imageID": image_id, "status": "deleted"}), 200
+
+
+def get_image(image_name):
+    return render_template(
+        "image.html",
+        downloadURL=f"/static/uploads/{image_name}"
+    )

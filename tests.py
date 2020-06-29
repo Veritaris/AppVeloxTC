@@ -18,20 +18,14 @@ for _dir in [uploadsDir, resizedImagesDir]:
         os.remove(os.path.join(_dir, _file))
 
 
-class TestFlaskApp(unittest.TestCase):
-    def setUp(self) -> None:
-        app_to_test.config["TESTING"] = True
-        self.app = app.test_client()
-
-
 def upload_image(file):
     with open(os.path.join(testImagesDir, file), 'rb') as f:
         files = {
             "file": f
         }
         data = {
-            "width": fake.random.randint(1, 9999),
-            "height": fake.random.randint(1, 9999)
+            "width": fake.random.randint(-50, 9999),
+            "height": fake.random.randint(-50, 9999)
         }
         # Setting verifying ssl to false because of self-signed certificate
         p = requests.post(f"{url}/upload", files=files, verify=False, data=data)
@@ -76,11 +70,11 @@ def test_upload():
     print(75*"=")
     print(f"Tests passed: {passed_tests}")
     print(f"Tests failed: {test_amount - passed_tests}")
-    for k, v in failed_tests.items():
-        print(f"\tTest {k}: \n"
-              f"\tserver responded with status code {v[0]} and returned \"{v[1]}\"\n"
-              f"\t\tExtended traceback:\n"
-              f"\t\t{failed_tests_extended[k]}")
+    # for k, v in failed_tests.items():
+    #     print(f"\tTest {k}: \n"
+    #           f"\tserver responded with status code {v[0]} and returned \"{v[1]}\"\n"
+    #           f"\t\tExtended traceback:\n"
+    #           f"\t\t{failed_tests_extended[k]}")
     # print(failed_tests_extended)
 
 
