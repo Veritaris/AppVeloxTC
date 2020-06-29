@@ -10,8 +10,8 @@ fake = Faker()
 
 
 testImagesDir = os.path.join(os.path.curdir, "testImages")
-uploadsDir = os.path.join(os.path.curdir, "uploads")
-resizedImagesDir = os.path.join(os.path.curdir, "resizedImages")
+uploadsDir = os.path.join(os.path.curdir, "static", "uploads")
+resizedImagesDir = os.path.join(os.path.curdir, "static", "resizedImages")
 
 for _dir in [uploadsDir, resizedImagesDir]:
     for _file in os.listdir(_dir):

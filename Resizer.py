@@ -1,11 +1,14 @@
 from DatabaseModels import ProcessedImages, Images, database
 from werkzeug.exceptions import RequestEntityTooLarge
+from logging.handlers import RotatingFileHandler
 from flask import request, render_template
 from werkzeug.utils import secure_filename
 from multiprocessing import Process
+from logging import Formatter
 from flask import jsonify
 from uuid import uuid4
 from PIL import Image
+from app import app
 import logging
 import random
 import Config
@@ -15,11 +18,16 @@ import os
 cwd = Config.cwd
 config = Config.config
 session = database.session
-logging.basicConfig(
-    format="%(levelname)-8s [%(asctime)s] %(message)s",
-    level=logging.INFO,
-    filename="./logs/info.log",
-)
+
+handler = RotatingFileHandler(f"{cwd}/{config['logs_file']}", maxBytes=1000000, backupCount=1)
+handler.setLevel(logging.INFO)
+handler.setFormatter(Formatter('%(levelname)-8s %(asctime)s: %(message)s \t[in %(pathname)s:%(lineno)d]'))
+
+logging.getLogger('werkzeug').setLevel(logging.CRITICAL)
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+logger.addHandler(handler)
 
 
 def is_file_allowed(filename: str) -> bool:
@@ -28,7 +36,7 @@ def is_file_allowed(filename: str) -> bool:
     :param filename: string, filename with extension
     :return true or false
     """
-    return '.' in filename and filename.rsplit('.', 1)[1].lower() in config.list("allowed_extensions")
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in config["allowed_extensions"]
 
 
 def upload_image():
@@ -42,28 +50,28 @@ def upload_image():
     try:
         file = request.files.get("file")
     except RequestEntityTooLarge:
-        logging.warning(f"User tried to upload file, but it was too large.")
+        logger.warning(f"User tried to upload file, but it was too large.")
         return jsonify({"error": "File is too large"}), 413
     if not file:
-        logging.warning(f"User tried to upload file, but didn't provide a file.")
+        logger.warning(f"User tried to upload file, but didn't provide a file.")
         return jsonify({"error": "No file to resize"}), 400
 
     width, height = request.form.get("width"), request.form.get("height")
     if not (width and height):
-        logging.warning(f"User tried to upload file, but didn't provide width or height.")
+        logger.warning(f"User tried to upload file, but didn't provide width or height.")
         return jsonify({"error": "Not enough data to resize"}), 400
     width, height = map(int, (width, height))
 
     try:
         assert width in range(1, 10000)
     except AssertionError:
-        logging.warning(f"User tried to upload file, but provided not allowed width")
+        logger.warning(f"User tried to upload file, but provided not allowed width")
         return jsonify({"error": f"Wrong width: {width} is not in range 1..9999"}), 400
 
     try:
         assert width in range(1, 10000)
     except AssertionError:
-        logging.warning(f"User tried to upload file, but provided not allowed height")
+        logger.warning(f"User tried to upload file, but provided not allowed height")
         return jsonify({"error": f"Wrong width: {width} is not in range 1..9999"}), 400
 
     if file and is_file_allowed(file.filename):
@@ -95,7 +103,7 @@ def upload_image():
             ), 202
 
     if not is_file_allowed(file.filename):
-        logging.warning(f"User tried to upload file, but it was not a png/jpg image.")
+        logger.warning(f"User tried to upload file, but it was not a png/jpg image: {file.filename}")
         return jsonify({"error": "Wrong file extension"}), 415
 
 
@@ -112,14 +120,14 @@ def save_image(file, filename):
     try:
         file.save(
             os.path.join(
-                cwd, config.str('upload_folder'),
+                cwd, config['upload_folder'],
                 internal_filename
             )
         )
     except Exception as e:
-        logging.error(f"Error while tried to save file {internal_filename}")
+        logger.error(f"Error while tried to save file {internal_filename}")
         return jsonify({"error": "Sorry, file was not uploaded because of internal error"}), 500
-    logging.info(f"Uploaded file {internal_filename}")
+    logger.info(f"Uploaded file {internal_filename}")
     return True, internal_filename
 
 
@@ -150,7 +158,7 @@ def resize_image(image, width, height, filename, imageID):
     )
     session.add(processed_image)
     session.commit()
-    logging.info(f"Resized file {filename}")
+    logger.info(f"Resized file {filename}")
     return None
 
 
@@ -162,21 +170,21 @@ def show_resized_images(image_id):
     if image_id:
         image = database.session.query(ProcessedImages).get(image_id)
         if image:
-            logging.info(f"User requested file {image.imageFileName}")
+            logger.info(f"User requested file {image.imageFileName}")
             return jsonify(image.serialize), 200
         else:
-            logging.warning(f"User requested file with id {image_id}, but it does not exists.")
+            logger.warning(f"User requested file with id {image_id}, but it does not exists.")
             return jsonify({"error": f"No image with index {image_id} or it was deleted"}), 404
     else:
         if database.session.query(ProcessedImages).all():
-            logging.info(f"User requested all images")
+            logger.info(f"User requested all images")
             return jsonify({
                 "images": [
                     json.dumps(x.serialize) for x in session.query(ProcessedImages).all()
                 ]
             }), 200
         else:
-            logging.warning(f"User requested all images, but there is to one yet.")
+            logger.warning(f"User requested all images, but there is no one yet.")
             return jsonify({"error": "No images in database yet or they were deleted"}), 200
 
 
@@ -203,7 +211,7 @@ def delete_image(image_id):
         session.delete(image_images)
         session.delete(image_processed_images)
         session.commit()
-
+    logger .info(f"User deleted image with id {image_id}")
     return jsonify({"imageID": image_id, "status": "deleted"}), 200
 
 

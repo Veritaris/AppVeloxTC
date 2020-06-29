@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify, make_response
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import Config
@@ -8,11 +8,13 @@ secret = Config.secret
 cwd = Config.cwd
 
 app = Flask(__name__)
-app.config["UPLOAD_FOLDER"] = config("upload_folder")
-app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{cwd}{config('sqlalchemy_database_uri')}"
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = config.bool("sqlalchemy_track_modifications")
-app.config["SECRET_KEY"] = secret("secret_key")
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{cwd}{config['sqlalchemy_database_uri']}"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = config["sqlalchemy_track_modifications"]
+app.config["UPLOAD_FOLDER"] = config["upload_folder"]
+app.config["MAX_CONTENT_LENGTH"] = 16 * 1024 * 1024
+app.config["SECRET_KEY"] = secret["secret_key"]
+app.config["LOGFILE"] = config["logs_file"]
+
 
 database = SQLAlchemy(app)
 migrate = Migrate(app, database)
@@ -21,13 +23,20 @@ import DatabaseModels
 import Resizer
 
 
-@app.route("/", methods=["GET"])
+@app.route("/", methods=["GET", "POST"])
 def hello_world():
     """
-    Render web app main page
+    Render web app main page if method==GET and refuse if other
     :return:
     """
-    return render_template("index.html")
+
+    response = make_response()
+    response.status_code = 405
+    response.headers = {"Allow": ["GET"]}
+    if request.method == "GET":
+        return render_template("index.html")
+    else:
+        return response
 
 
 @app.route("/upload", methods=["POST"])
@@ -61,12 +70,15 @@ def show_images(image_id):
 
 @app.route("/upload/<string:image_name>", methods=["GET"])
 def show_image(image_name):
+    """
+    Render image with filename if it exists on server
+    :param image_name: image filename on server
+    """
     return Resizer.get_image(image_name)
 
 
 @app.route("/upload/<int:image_id>", methods=["DELETE"])
 def delete_image(image_id):
-    print("deleting")
     """
     Delete image with given id on server and from database. Requires password
     """
