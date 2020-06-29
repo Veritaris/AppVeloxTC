@@ -29,6 +29,13 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 logger.addHandler(handler)
 
+# TESTING = app.testing
+TESTING = True
+
+def main_page():
+    # return render_template("index.html")
+    return jsonify({"status": "ok"}), 200
+
 
 def is_file_allowed(filename: str) -> bool:
     """
@@ -89,7 +96,7 @@ def upload_image():
 
             resize_thread = Process(
                 target=resize_image,
-                args=(file, int(width), int(height), internal_filename, imageID)
+                args=(file, width, height, internal_filename, imageID)
             )
             resize_thread.start()
 
@@ -115,7 +122,10 @@ def save_image(file, filename):
     :return: True and internal filename if succeed, 500 error if something went wrong
     """
     ext = filename.split(".")[-1]
-    internal_filename = f"{str(uuid4().hex)}.{ext}"
+    if not TESTING:
+        internal_filename = f"{str(uuid4().hex)}.{ext}"
+    else:
+        internal_filename = filename
 
     try:
         file.save(

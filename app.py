@@ -29,12 +29,12 @@ def hello_world():
     Render web app main page if method==GET and refuse if other
     :return:
     """
-
     response = make_response()
     response.status_code = 405
     response.headers = {"Allow": ["GET"]}
+
     if request.method == "GET":
-        return render_template("index.html")
+        return Resizer.main_page()
     else:
         return response
 
