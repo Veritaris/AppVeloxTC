@@ -1,3 +1,4 @@
+![CI](https://github.com/Veritaris/AppVeloxTC/workflows/CI/badge.svg?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/Veritaris/AppVeloxTC/badge.svg?branch=develop)](https://coveralls.io/github/Veritaris/AppVeloxTC?branch=master)
 
 Hi. This is a test case for AppVelox company to test my skills.
