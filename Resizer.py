@@ -8,7 +8,6 @@ from logging import Formatter
 from flask import jsonify
 from uuid import uuid4
 from PIL import Image
-from app import app
 import logging
 import random
 import Config
@@ -21,16 +20,14 @@ session = database.session
 
 handler = RotatingFileHandler(f"{cwd}/{config['logs_file']}", maxBytes=1000000, backupCount=1)
 handler.setLevel(logging.INFO)
-handler.setFormatter(Formatter('%(levelname)-8s %(asctime)s: %(message)s \t[in %(pathname)s:%(lineno)d]'))
+handler.setFormatter(Formatter(
+    '%(levelname)-8s %(asctime)s: %(message)s'
+))
 
-logging.getLogger('werkzeug').setLevel(logging.CRITICAL)
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
+logger = logging.getLogger('werkzeug')
+logger.setLevel(logging.DEBUG)
 logger.addHandler(handler)
 
-# TESTING = app.testing
-TESTING = True
 
 def main_page():
     # return render_template("index.html")
@@ -60,7 +57,7 @@ def upload_image():
         logger.warning(f"User tried to upload file, but it was too large.")
         return jsonify({"error": "File is too large"}), 413
     if not file:
-        logger.warning(f"User tried to upload file, but didn't provide a file.")
+        logger.warning(f"User tried to upload file, but didn't provide a file.\n\t{request.values}")
         return jsonify({"error": "No file to resize"}), 400
 
     width, height = request.form.get("width"), request.form.get("height")
@@ -76,10 +73,10 @@ def upload_image():
         return jsonify({"error": f"Wrong width: {width} is not in range 1..9999"}), 400
 
     try:
-        assert width in range(1, 10000)
+        assert height in range(1, 10000)
     except AssertionError:
-        logger.warning(f"User tried to upload file, but provided not allowed height")
-        return jsonify({"error": f"Wrong width: {width} is not in range 1..9999"}), 400
+        logger.warning(f"User tried to upload file, but provided not allowed height\n\t{request.base_url}")
+        return jsonify({"error": f"Wrong width: {height} is not in range 1..9999"}), 400
 
     if file and is_file_allowed(file.filename):
         filename = secure_filename(file.filename)
@@ -104,7 +101,7 @@ def upload_image():
                 {
                     "imageID": imageID,
                     "password": password,
-                    "downloadURL": f"/static/resizedImages{internal_filename.split('.')[0]}_"
+                    "downloadURL": f"/static/resizedImages/{internal_filename.split('.')[0]}_"
                                    f"{width}x{height}.{internal_filename.split('.')[-1]}"
                 }
             ), 202
@@ -122,10 +119,10 @@ def save_image(file, filename):
     :return: True and internal filename if succeed, 500 error if something went wrong
     """
     ext = filename.split(".")[-1]
-    if not TESTING:
-        internal_filename = f"{str(uuid4().hex)}.{ext}"
-    else:
+    if "unittest_" in filename:
         internal_filename = filename
+    else:
+        internal_filename = f"{str(uuid4().hex)}.{ext}"
 
     try:
         file.save(
@@ -195,7 +192,7 @@ def show_resized_images(image_id):
             }), 200
         else:
             logger.warning(f"User requested all images, but there is no one yet.")
-            return jsonify({"error": "No images in database yet or they were deleted"}), 200
+            return jsonify({"error": "No images in database yet or they were deleted"}), 404
 
 
 def delete_image(image_id):
@@ -221,7 +218,7 @@ def delete_image(image_id):
         session.delete(image_images)
         session.delete(image_processed_images)
         session.commit()
-    logger .info(f"User deleted image with id {image_id}")
+    logger.info(f"User deleted image with id {image_id}")
     return jsonify({"imageID": image_id, "status": "deleted"}), 200
 
 

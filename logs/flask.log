@@ -1,227 +1,558 @@
-INFO     2020-06-30 01:32:00,940: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:32:00,959: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:32:00,971: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-WARNING  2020-06-30 01:32:00,980: User tried to upload file, but didn't provide a file. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:61]
-INFO     2020-06-30 01:32:46,259: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:32:46,271: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:32:46,281: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-WARNING  2020-06-30 01:32:46,291: User tried to upload file, but didn't provide a file. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:61]
-INFO     2020-06-30 01:32:52,257: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:32:52,271: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:32:52,282: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-WARNING  2020-06-30 01:32:52,291: User tried to upload file, but didn't provide a file. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:61]
-INFO     2020-06-30 01:33:43,626: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:33:43,638: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:33:43,648: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-WARNING  2020-06-30 01:33:43,658: User tried to upload file, but didn't provide a file. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:61]
-INFO     2020-06-30 01:34:05,159: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:34:05,171: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:34:05,183: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-WARNING  2020-06-30 01:34:05,192: User tried to upload file, but didn't provide a file. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:61]
-INFO     2020-06-30 01:34:25,068: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:34:25,081: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:34:25,092: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-WARNING  2020-06-30 01:34:25,101: User tried to upload file, but didn't provide a file. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:61]
-WARNING  2020-06-30 01:35:01,910: User tried to upload file, but didn't provide a file. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:61]
-INFO     2020-06-30 01:43:35,815: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:43:35,826: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:43:35,837: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:43:47,852: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:43:47,864: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:43:47,875: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:47:30,971: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:47:30,982: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:47:30,995: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:47:50,938: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:47:50,950: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:47:50,960: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:49:06,303: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:49:06,315: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:49:06,325: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-WARNING  2020-06-30 01:49:06,333: User tried to upload file, but didn't provide a file. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:61]
-INFO     2020-06-30 01:49:31,776: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:49:31,788: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:49:31,799: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:49:38,589: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:49:38,603: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:49:38,615: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:49:46,311: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:49:46,322: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:49:46,334: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-WARNING  2020-06-30 01:49:46,344: User tried to upload file, but didn't provide a file. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:61]
-INFO     2020-06-30 01:52:36,391: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:52:36,404: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:52:36,416: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:52:36,431: Uploaded file cb67203ebb8746238c295ee929121757.png 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 01:53:22,594: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:53:22,606: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:53:22,616: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:53:22,627: Uploaded file 8c12b491afe948258619717d15662e0f.png 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 01:53:52,123: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:53:52,134: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:53:52,145: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:53:52,155: Uploaded file ef5ae4a7ae804e8196e162136cdca54e.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 01:58:15,361: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:58:15,373: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:58:15,384: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:58:15,394: Uploaded file ba1ac304e1e54b7c846f9201525207af.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 01:58:27,638: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:58:27,650: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:58:27,662: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 01:58:27,671: Uploaded file 3fb0946cfe454fc7b622ec8173b4706d.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:02:20,822: User deleted image with id 22 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:02:20,829: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-WARNING  2020-06-30 02:02:20,841: User requested file with id 186, but it does not exists. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:181]
-INFO     2020-06-30 02:02:20,844: Uploaded file f733c0bde23141a5bb6e6870af28868a.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:02:48,024: User deleted image with id 12 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:02:48,030: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:02:48,040: User requested file 4f241156c6514c679d5c1142edd19732_7683x9781.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-WARNING  2020-06-30 02:02:48,043: User tried to upload file, but provided not allowed width 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:73]
-INFO     2020-06-30 02:02:56,677: User deleted image with id 60 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:02:56,684: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:02:56,695: User requested file 4cb7ebf185a2425b9acf5fa41b6b2b7b_848x9313.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:02:56,698: Uploaded file 85e900b0c47c43cc8606546d4f34a55b.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:00,481: User deleted image with id 24 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:00,488: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:00,498: User requested file 5dff3703dc354f46b4c7f47477f1044d_199x4622.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-WARNING  2020-06-30 02:03:00,500: User tried to upload file, but provided not allowed width 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:73]
-INFO     2020-06-30 02:03:03,658: User deleted image with id 32 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:03,666: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:03,675: User requested file 55027f78eded4023b668c582113a7719_8102x3237.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:03:03,678: Uploaded file 7056e16656c04d54aa7386ec0afa70d1.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:05,942: User deleted image with id 11 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:05,949: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:05,959: User requested file 663ad1dc11e443d392725aaaf8654b78_2854x7285.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:03:05,961: Uploaded file b6ea8f72fa664b6ca29ffc98e442d7b1.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:09,875: User deleted image with id 1 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:09,882: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:09,890: User requested file 4cb7ebf185a2425b9acf5fa41b6b2b7b_848x9313.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:03:09,893: Uploaded file 96a5c4a1712841e09496c8bbf2a002c8.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:11,346: User deleted image with id 70 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:11,353: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:11,386: User requested file 67c1527651d34cef99de09a7a0160daa_6120x6710.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:03:11,390: Uploaded file 99aa74a272ba42bd8fb8c74d5274b293.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:12,815: User deleted image with id 16 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:12,823: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:12,837: User requested file b31271c4603b4954a7db28b8515a4fa3_1641x5755.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:03:12,840: Uploaded file 1539d70d2d9c47aa8536c51458b9db9e.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:14,349: User deleted image with id 26 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:14,357: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:14,368: User requested file def02cc5c7c049bb853cf23ee892b9d2_974x7165.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:03:14,376: Uploaded file c58196bf21454273b25da5209b5dfa06.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:15,792: User deleted image with id 29 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:15,799: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:15,812: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-WARNING  2020-06-30 02:03:15,826: User tried to upload file, but provided not allowed width 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:73]
-INFO     2020-06-30 02:03:17,706: User deleted image with id 85 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:17,713: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:17,722: User requested file b151ffadd21345e193086fa1f179b7d7_2852x8422.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:03:17,725: Uploaded file 8eacf08cba9c465f94a27f3d49276e04.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:19,372: User deleted image with id 16 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:19,379: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:19,391: User requested file a19791caef8c4ae192130ce3022bbaa7_2492x330.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:03:19,394: Uploaded file 52ee337727be43579ef96027b51e94bd.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:20,986: User deleted image with id 100 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:20,993: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:21,019: User requested file 725f719da7e54ce291b2d2a8550efa2f_7445x2259.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:03:21,029: Uploaded file 5973837ab8c14f6799602524205e7b19.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:22,605: User deleted image with id 40 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:22,612: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:22,623: User requested file fedda92884074d25819361e674aeaf04_180x4277.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:03:22,626: Uploaded file 307d81f33c014172b07a49274129b0bf.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:24,266: User deleted image with id 87 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:24,274: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:24,286: User requested file 663ad1dc11e443d392725aaaf8654b78_2854x7285.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:03:24,289: Uploaded file cd2ba1b9d4e54322bd6650586222c881.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:25,890: User deleted image with id 65 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:25,897: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:25,915: Uploaded file 98e39947fb704369893de6598ab3feb3.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:03:27,570: User deleted image with id 19 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:03:27,578: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:03:27,589: User requested file 017416e0625d4623a7300faff76aa842_2218x9070.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-WARNING  2020-06-30 02:03:27,592: User tried to upload file, but provided not allowed width 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:73]
-INFO     2020-06-30 02:07:55,723: User deleted image with id 49 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:07:55,735: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:07:55,751: User requested file fff2df7a799c45d0bab40973a87c4a55_3574x4454.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:07:55,756: Uploaded file 7ab84e11779344638f8768af71dcdc2f.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:09:21,838: User deleted image with id 22 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:09:21,846: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:09:21,856: User requested file f74e1b6b82354382bfee3878d2e4c9cc_7883x7681.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:09:21,859: Uploaded file 18fdbedd620947de8d0a44d4b1c9aeea.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:09:37,025: User deleted image with id 21 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:09:37,031: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:09:37,042: User requested file a0079dbcdd2e41e1a09d6cd829d8dece_3804x7660.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:09:37,044: Uploaded file 3e4d3656180e4e63bf9118fdaaf0ed04.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:09:55,284: User deleted image with id 24 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:09:55,291: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:09:55,300: User requested file 1d75b58db8d142ed9f08b109646b35d4_727x1330.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-WARNING  2020-06-30 02:09:55,303: User tried to upload file, but provided not allowed width 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:73]
-INFO     2020-06-30 02:09:59,676: User deleted image with id 86 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:09:59,683: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:09:59,694: User requested file 7f18601b1954456ea5505c5dc09430a3_2265x6438.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:09:59,697: Uploaded file 5444523fa94e4ed784ad840b80033eae.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:10:02,235: User deleted image with id 94 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:10:02,242: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:10:02,252: User requested file 4cb7ebf185a2425b9acf5fa41b6b2b7b_848x9313.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:10:02,255: Uploaded file 022920ac0a104dd6bfeb3210e302a990.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:10:03,809: User deleted image with id 58 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:10:03,839: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:10:03,849: User requested file def02cc5c7c049bb853cf23ee892b9d2_974x7165.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-WARNING  2020-06-30 02:10:03,852: User tried to upload file, but provided not allowed width 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:73]
-INFO     2020-06-30 02:10:05,312: User deleted image with id 24 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:219]
-INFO     2020-06-30 02:10:05,319: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:185]
-INFO     2020-06-30 02:10:05,348: User requested file 3cc6a19e07a8425bad0bcdbc588d36b3_4455x3797.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:178]
-INFO     2020-06-30 02:10:05,351: Uploaded file dc70c4310cf5414ebf7c3661850c508d.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:135]
-INFO     2020-06-30 02:11:40,627: User deleted image with id 39 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:11:40,634: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:11:40,645: User requested file ab8c98e1e91a433d8c3acd28d736b1f1_4971x6123.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-INFO     2020-06-30 02:11:40,648: Uploaded file cac7ddeadbd747afaaa674ada67da0c6.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:140]
-INFO     2020-06-30 02:11:58,227: User deleted image with id 35 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:11:58,234: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:11:58,245: User requested file aa31ebdb3ec447d4a9f5dc5bdb2172e1_4052x2450.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-INFO     2020-06-30 02:11:58,248: Uploaded file DEwdNNDb9tQ.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:140]
-INFO     2020-06-30 02:12:30,627: User deleted image with id 28 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:12:30,641: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:12:30,660: User requested file 6b0cddda264e476e82a017ffb6cc14a1_1388x4223.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-INFO     2020-06-30 02:13:18,458: Uploaded file GMtkAdbrd0U.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:140]
-INFO     2020-06-30 02:14:06,934: User deleted image with id 96 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:14:06,948: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:14:06,968: User requested file 12773a7886854faa9e0cc74d6563b216_6259x2017.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-INFO     2020-06-30 02:14:08,984: Uploaded file PkWk1kMiTPo.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:140]
-INFO     2020-06-30 02:14:35,030: User deleted image with id 57 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:14:35,045: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:14:35,065: User requested file 681281469ff64da1a21f49ec1b166d0e_7245x4807.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-INFO     2020-06-30 02:14:36,143: Uploaded file QyN-R3sQFMM.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:140]
-INFO     2020-06-30 02:16:37,932: User deleted image with id 29 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:16:37,939: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:16:37,950: User requested file df4caf0973a3441bb089320d0cd33ae3_3882x8190.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-INFO     2020-06-30 02:16:37,952: Uploaded file DEwdNNDb9tQ.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:140]
-INFO     2020-06-30 02:16:46,369: User deleted image with id 82 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:16:46,384: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:16:46,402: User requested file c6e2d191e5114c2e9c3645af46341e7d_1286x30.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-INFO     2020-06-30 02:17:47,652: User deleted image with id 98 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:17:47,659: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:17:47,669: User requested file c5cff59997324449abbabfc5dd445051_8855x2160.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-INFO     2020-06-30 02:17:47,672: Uploaded file 68DgEMSF3NI.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:140]
-INFO     2020-06-30 02:18:14,605: User deleted image with id 3 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:18:14,614: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:18:14,623: User requested file 46f7a918f69f421ea620fbaff810054f_2188x2652.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-INFO     2020-06-30 02:18:20,085: User deleted image with id 26 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:18:20,093: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:18:20,103: User requested file 5dff3703dc354f46b4c7f47477f1044d_199x4622.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-INFO     2020-06-30 02:18:28,043: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:18:28,054: User requested file e2cd9095d1844245b818260a91115ff7_2816x7990.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-INFO     2020-06-30 02:18:28,088: Uploaded file ysd3nIHpLHg.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:140]
-INFO     2020-06-30 02:18:28,507: Resized file ysd3nIHpLHg_2262x3758.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:171]
-INFO     2020-06-30 02:19:00,618: User deleted image with id 55 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:19:00,626: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:19:00,637: User requested file aa31ebdb3ec447d4a9f5dc5bdb2172e1_4052x2450.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-WARNING  2020-06-30 02:19:00,648: User tried to upload file, but didn't provide a file. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:63]
-INFO     2020-06-30 02:19:05,466: User deleted image with id 46 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:19:05,473: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:19:05,483: User requested file 6858e792f88c48efa52c577409aa2cad_7791x3689.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-WARNING  2020-06-30 02:19:05,492: User tried to upload file, but didn't provide a file. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:63]
-INFO     2020-06-30 02:19:06,996: User deleted image with id 4 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:224]
-INFO     2020-06-30 02:19:07,004: User requested all images 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:190]
-INFO     2020-06-30 02:19:07,015: User requested file d77767b4bebf488e8c19de5461ac382b_3962x3049.jpg 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:183]
-WARNING  2020-06-30 02:19:07,025: User tried to upload file, but didn't provide a file. 	[in /Users/veritaris/Documents/Work/AppVelox/Resizer.py:63]
+INFO     2020-06-30 14:01:42,167: User deleted image with id 52
+	/upload/52?
+INFO     2020-06-30 14:01:42,176: User requested all images
+	/upload?
+INFO     2020-06-30 14:01:42,188: User requested file 47cd61d6a6274589a5d53ef9280f586e_2257x1942.jpg
+	/upload/5?
+INFO     2020-06-30 14:01:42,330: Uploaded file 16e64ed030324ba8af43d641fe7cc289.png
+	/upload?
+INFO     2020-06-30 14:02:10,380: User deleted image with id 44
+	/upload/44?
+INFO     2020-06-30 14:02:10,388: User requested all images
+	/upload?
+INFO     2020-06-30 14:02:10,399: User requested file e2cd9095d1844245b818260a91115ff7_2816x7990.jpg
+	/upload/27?
+INFO     2020-06-30 14:02:10,401: Uploaded file 9432a641d71b43fa9083d55fc6f414e2.png
+	/upload?
+INFO     2020-06-30 14:02:18,594: User deleted image with id 55
+	/upload/55?
+INFO     2020-06-30 14:02:18,602: User requested all images
+	/upload?
+INFO     2020-06-30 14:02:18,612: User requested file ab8c98e1e91a433d8c3acd28d736b1f1_4971x6123.jpg
+	/upload/9?
+INFO     2020-06-30 14:02:18,647: Uploaded file 76f6ce772123496e86fb80a0f56f6248.png
+	/upload?
+INFO     2020-06-30 14:02:20,765: Resized file 76f6ce772123496e86fb80a0f56f6248_5605x593.png
+INFO     2020-06-30 14:03:13,694: User deleted image with id 80
+	/upload/80?
+INFO     2020-06-30 14:03:13,701: User requested all images
+	/upload?
+INFO     2020-06-30 14:03:13,713: User requested file 25dc4acaae754016a3d62c8fbee68378_2916x9180.jpg
+	/upload/98?
+INFO     2020-06-30 14:03:13,776: Uploaded file 630e35c0e1a24a9bb772680cdaea2d98.png
+	b''
+INFO     2020-06-30 14:03:34,750: User deleted image with id 39
+	/upload/39?
+INFO     2020-06-30 14:03:34,758: User requested all images
+	/upload?
+INFO     2020-06-30 14:03:34,768: User requested file 2fe505e5f7374036a280aab3c038a61c_9137x9180.jpg
+	/upload/56?
+INFO     2020-06-30 14:03:34,799: Uploaded file 00cf7af45c5d41619b68895758737e2c.png
+	127.0.0.1
+INFO     2020-06-30 14:03:48,259: Resized file 00cf7af45c5d41619b68895758737e2c_2462x8433.png
+INFO     2020-06-30 14:06:12,895: User deleted image with id 33
+INFO     2020-06-30 14:06:12,903: User requested all images
+INFO     2020-06-30 14:06:12,913: User requested file 8d14868733f7471ea7f9852eab81bd45_9182x7551.jpg
+INFO     2020-06-30 14:06:12,939: Uploaded file f686ad194d5a40e5b238f7ff0fe2c213.png
+INFO     2020-06-30 14:06:21,081: Resized file f686ad194d5a40e5b238f7ff0fe2c213_2771x7829.png
+INFO     2020-06-30 14:07:19,657: User deleted image with id 49
+INFO     2020-06-30 14:07:19,665: User requested all images
+INFO     2020-06-30 14:07:19,675: User requested file 97de540f909e472098957dae5f88054c_1442x438.jpg
+INFO     2020-06-30 14:07:19,762: Uploaded file 48c34bb960db4f33bd6018d63fbb4a97.png
+INFO     2020-06-30 14:07:30,637: Resized file 48c34bb960db4f33bd6018d63fbb4a97_3973x4339.png
+INFO     2020-06-30 14:07:32,688: User deleted image with id 49
+INFO     2020-06-30 14:07:32,696: User requested all images
+INFO     2020-06-30 14:07:32,707: User requested file e4de674463bb4b1b8a48190558c3056d_1873x2068.jpg
+INFO     2020-06-30 14:07:32,734: Uploaded file 3b906450fde74c4b8c8ba17b7a6b0b01.png
+INFO     2020-06-30 14:07:35,384: Resized file 3b906450fde74c4b8c8ba17b7a6b0b01_4110x1010.png
+INFO     2020-06-30 14:07:39,754: User requested all images
+INFO     2020-06-30 14:07:39,769: User requested file a79609f8e6964cceba023f0931bd99e1_7385x9352.jpg
+INFO     2020-06-30 14:07:39,904: Uploaded file ec91d5b2aeb84a50afe3fbf083a13cd5.png
+INFO     2020-06-30 14:07:41,884: Resized file ec91d5b2aeb84a50afe3fbf083a13cd5_1403x2377.png
+INFO     2020-06-30 14:07:47,271: User deleted image with id 57
+INFO     2020-06-30 14:07:47,280: User requested all images
+INFO     2020-06-30 14:07:47,294: User requested all images
+INFO     2020-06-30 14:07:47,356: Uploaded file 81974089b3514358b0d15832b20fd29b.png
+INFO     2020-06-30 14:08:09,108: Resized file 81974089b3514358b0d15832b20fd29b_7513x5789.png
+INFO     2020-06-30 14:08:31,206: User deleted image with id 61
+INFO     2020-06-30 14:08:31,214: User requested all images
+INFO     2020-06-30 14:08:31,227: User requested file 3cc6a19e07a8425bad0bcdbc588d36b3_4455x3797.jpg
+INFO     2020-06-30 14:08:31,319: Uploaded file 0a4e794dc409426c8c42dec4015bda1c.png
+INFO     2020-06-30 14:08:38,546: Resized file 0a4e794dc409426c8c42dec4015bda1c_8608x1327.png
+INFO     2020-06-30 14:09:15,473: User deleted image with id 38
+WARNING  2020-06-30 14:09:15,495: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 14:09:15,501: User requested all images
+INFO     2020-06-30 14:09:15,512: User requested file f68a442e828c4e32aa3c6df0c4ff933a_6851x9892.jpg
+INFO     2020-06-30 14:09:15,524: Uploaded file 7fc756d3429a4c40a4f4b733bd27552d.png
+INFO     2020-06-30 14:09:21,608: Resized file 7fc756d3429a4c40a4f4b733bd27552d_2609x5835.png
+WARNING  2020-06-30 14:12:52,054: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:12:52,055: 127.0.0.1 - - [30/Jun/2020 14:12:52] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+WARNING  2020-06-30 14:17:43,777: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:17:43,778: 127.0.0.1 - - [30/Jun/2020 14:17:43] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+WARNING  2020-06-30 14:18:05,544: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:18:05,545: 127.0.0.1 - - [30/Jun/2020 14:18:05] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:19:06,262:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:19:06,339:  * Restarting with stat
+WARNING  2020-06-30 14:19:09,172: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:19:09,172: 127.0.0.1 - - [30/Jun/2020 14:19:09] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:19:16,134:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:19:16,212:  * Restarting with stat
+WARNING  2020-06-30 14:19:17,332: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:19:17,332: 127.0.0.1 - - [30/Jun/2020 14:19:17] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:19:26,955:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:19:27,024:  * Restarting with stat
+WARNING  2020-06-30 14:19:28,581: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:19:28,582: 127.0.0.1 - - [30/Jun/2020 14:19:28] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:19:36,517: 127.0.0.1 - - [30/Jun/2020 14:19:36] "[37mGET / HTTP/1.1[0m" 200 -
+INFO     2020-06-30 14:20:15,415:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/Resizer.py', reloading
+INFO     2020-06-30 14:20:15,485:  * Restarting with stat
+INFO     2020-06-30 14:20:32,402:  * Restarting with stat
+INFO     2020-06-30 14:20:48,373:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:20:48,439:  * Restarting with stat
+WARNING  2020-06-30 14:20:51,112: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:20:51,113: 127.0.0.1 - - [30/Jun/2020 14:20:51] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:21:01,432:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:21:01,504:  * Restarting with stat
+WARNING  2020-06-30 14:21:02,484: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:21:02,485: 127.0.0.1 - - [30/Jun/2020 14:21:02] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:21:23,401:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/Resizer.py', reloading
+INFO     2020-06-30 14:21:23,473:  * Restarting with stat
+INFO     2020-06-30 14:21:28,388: 127.0.0.1 - - [30/Jun/2020 14:21:28] "[37mGET / HTTP/1.1[0m" 200 -
+INFO     2020-06-30 14:21:28,397: 127.0.0.1 - - [30/Jun/2020 14:21:28] "[37mGET /static/styles/style.css HTTP/1.1[0m" 200 -
+INFO     2020-06-30 14:21:34,622: Uploaded file 90d84f97db0540928351f043bbf96cce.jpg
+INFO     2020-06-30 14:21:34,645: 127.0.0.1 - - [30/Jun/2020 14:21:34] "[37mPOST /upload HTTP/1.1[0m" 202 -
+INFO     2020-06-30 14:21:35,003: Resized file 90d84f97db0540928351f043bbf96cce_2992x2876.jpg
+INFO     2020-06-30 14:21:59,592:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:21:59,671:  * Restarting with stat
+WARNING  2020-06-30 14:22:01,457: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:22:01,458: 127.0.0.1 - - [30/Jun/2020 14:22:01] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:22:08,500:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:22:08,569:  * Restarting with stat
+WARNING  2020-06-30 14:22:09,312: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:22:09,312: 127.0.0.1 - - [30/Jun/2020 14:22:09] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:22:23,347:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:22:23,417:  * Restarting with stat
+WARNING  2020-06-30 14:22:25,341: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:22:25,341: 127.0.0.1 - - [30/Jun/2020 14:22:25] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:22:39,234:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:22:39,290:  * Restarting with stat
+WARNING  2020-06-30 14:22:41,321: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:22:41,321: 127.0.0.1 - - [30/Jun/2020 14:22:41] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:23:31,638:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:23:31,703:  * Restarting with stat
+WARNING  2020-06-30 14:23:34,803: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:23:34,803: 127.0.0.1 - - [30/Jun/2020 14:23:34] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:24:01,730:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:24:01,798:  * Restarting with stat
+WARNING  2020-06-30 14:24:03,669: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:24:03,674: 127.0.0.1 - - [30/Jun/2020 14:24:03] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:24:56,152:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:24:56,234:  * Restarting with stat
+WARNING  2020-06-30 14:24:58,018: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:24:58,019: 127.0.0.1 - - [30/Jun/2020 14:24:58] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:25:11,038:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:25:11,148:  * Restarting with stat
+WARNING  2020-06-30 14:25:11,893: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:25:11,894: 127.0.0.1 - - [30/Jun/2020 14:25:11] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:25:24,929:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:25:24,996:  * Restarting with stat
+WARNING  2020-06-30 14:25:26,317: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:25:26,318: 127.0.0.1 - - [30/Jun/2020 14:25:26] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:26:10,349:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:26:10,494:  * Restarting with stat
+WARNING  2020-06-30 14:26:12,060: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:26:12,061: 127.0.0.1 - - [30/Jun/2020 14:26:12] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:26:48,788:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:26:48,872:  * Restarting with stat
+WARNING  2020-06-30 14:26:50,009: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:26:50,009: 127.0.0.1 - - [30/Jun/2020 14:26:50] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:27:09,774:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:27:09,854:  * Restarting with stat
+WARNING  2020-06-30 14:28:15,941: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:28:15,942: 127.0.0.1 - - [30/Jun/2020 14:28:15] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:28:42,083:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:28:42,198:  * Restarting with stat
+WARNING  2020-06-30 14:28:53,297: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:28:53,298: 127.0.0.1 - - [30/Jun/2020 14:28:53] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:29:23,486:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:29:23,558:  * Restarting with stat
+INFO     2020-06-30 14:29:31,282:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:29:31,347:  * Restarting with stat
+WARNING  2020-06-30 14:30:16,558: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:30:16,559: 127.0.0.1 - - [30/Jun/2020 14:30:16] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:30:32,789:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:30:32,872:  * Restarting with stat
+WARNING  2020-06-30 14:30:34,529: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:30:34,529: 127.0.0.1 - - [30/Jun/2020 14:30:34] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:30:46,686:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:30:46,755:  * Restarting with stat
+WARNING  2020-06-30 14:30:49,230: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:30:49,231: 127.0.0.1 - - [30/Jun/2020 14:30:49] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:31:00,530:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:31:00,597:  * Restarting with stat
+WARNING  2020-06-30 14:31:06,109: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:31:06,110: 127.0.0.1 - - [30/Jun/2020 14:31:06] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:31:40,245:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:31:40,322:  * Restarting with stat
+INFO     2020-06-30 14:31:41,637: 127.0.0.1 - - [30/Jun/2020 14:31:41] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO     2020-06-30 14:31:46,986:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:31:47,053:  * Restarting with stat
+WARNING  2020-06-30 14:31:48,128: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:31:48,128: 127.0.0.1 - - [30/Jun/2020 14:31:48] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:32:12,999:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:32:13,063:  * Restarting with stat
+INFO     2020-06-30 14:32:14,709:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:32:14,774:  * Restarting with stat
+WARNING  2020-06-30 14:32:15,364: User tried to upload file, but it was not a png/jpg image: file
+INFO     2020-06-30 14:32:15,364: 127.0.0.1 - - [30/Jun/2020 14:32:15] "[31m[1mPOST /upload HTTP/1.1[0m" 415 -
+INFO     2020-06-30 14:32:29,578:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:32:29,642:  * Restarting with stat
+INFO     2020-06-30 14:32:33,965: 127.0.0.1 - - [30/Jun/2020 14:32:33] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO     2020-06-30 14:32:42,162:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/app.py', reloading
+INFO     2020-06-30 14:32:42,248:  * Restarting with stat
+INFO     2020-06-30 14:32:52,999:  * Detected change in '/Users/veritaris/Documents/Work/AppVelox/Resizer.py', reloading
+INFO     2020-06-30 14:32:53,104:  * Restarting with stat
+INFO     2020-06-30 14:36:44,726: User deleted image with id 73
+WARNING  2020-06-30 14:36:44,739: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 14:36:44,746: User requested all images
+INFO     2020-06-30 14:36:44,757: User requested file f341a4721b26489b9feea0990dace633_3387x7556.jpg
+WARNING  2020-06-30 14:36:44,760: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 14:36:44,768: Uploaded file 3cdcb09b9bd245599b762e0416c0e8a9.png
+INFO     2020-06-30 14:36:48,856: Resized file 3cdcb09b9bd245599b762e0416c0e8a9_7065x1746.png
+INFO     2020-06-30 15:20:02,960: User deleted image with id 6
+WARNING  2020-06-30 15:20:02,988: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:20:02,999: User requested all images
+WARNING  2020-06-30 15:20:03,012: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:20:03,014: User requested file 7e2f75d529094a92bbdcaa045adf9efb_7010x8589.jpg
+WARNING  2020-06-30 15:20:03,051: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:20:03,064: Uploaded file fa0a95f1ff2f4d899216cb29e7b0d187.png
+INFO     2020-06-30 15:20:10,728: Resized file fa0a95f1ff2f4d899216cb29e7b0d187_3704x4438.png
+INFO     2020-06-30 15:20:35,901: User deleted image with id 49
+WARNING  2020-06-30 15:20:35,978: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:20:35,987: User requested all images
+WARNING  2020-06-30 15:20:35,999: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:20:36,001: User requested file 765749814cdd4cdaad790eda7284bcac_1210x3572.jpg
+WARNING  2020-06-30 15:20:36,029: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:20:36,086: Uploaded file 06dcf908a6e144aea8f75d5f6ba2d49e.png
+INFO     2020-06-30 15:20:45,027: Resized file 06dcf908a6e144aea8f75d5f6ba2d49e_4447x4827.png
+INFO     2020-06-30 15:20:48,544: User deleted image with id 80
+WARNING  2020-06-30 15:20:48,575: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:20:48,583: User requested all images
+WARNING  2020-06-30 15:20:48,595: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:20:48,598: User requested file a19791caef8c4ae192130ce3022bbaa7_2492x330.jpg
+WARNING  2020-06-30 15:20:48,609: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:20:48,611: Uploaded file 1a6c75b1c7304941aeefc36f5e4130ca.png
+INFO     2020-06-30 15:21:05,439: User deleted image with id 6
+WARNING  2020-06-30 15:21:05,487: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:21:05,494: User requested all images
+WARNING  2020-06-30 15:21:05,507: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:21:05,509: User requested file aaaa478d55d64f4ab0b2dcf641c1809c_1226x1899.jpg
+WARNING  2020-06-30 15:21:05,523: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:21:05,541: Uploaded file 509ea224ae9048e0b185e91520e4588c.png
+INFO     2020-06-30 15:21:42,350: User deleted image with id 77
+WARNING  2020-06-30 15:21:42,379: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:21:42,388: User requested all images
+WARNING  2020-06-30 15:21:42,401: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:21:42,404: User requested file b09d9216469448278c5629f8577d5690_5631x9829.jpg
+WARNING  2020-06-30 15:21:42,480: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:21:42,490: Uploaded file aad36a1051a4470e8db0eebd42366375.png
+INFO     2020-06-30 15:21:49,240: Resized file aad36a1051a4470e8db0eebd42366375_8404x2369.png
+INFO     2020-06-30 15:22:17,422: User deleted image with id 20
+WARNING  2020-06-30 15:22:17,481: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:22:17,488: User requested all images
+WARNING  2020-06-30 15:22:17,499: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:22:17,502: User requested file 1240736926f94eec98adb781e04e27e7_1392x6509.jpg
+INFO     2020-06-30 15:22:17,509: User requested all images
+WARNING  2020-06-30 15:22:17,524: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:22:17,537: Uploaded file ca579304c83b433997dd84965f2284fc.png
+INFO     2020-06-30 15:22:27,154: Resized file ca579304c83b433997dd84965f2284fc_3873x7429.png
+INFO     2020-06-30 15:22:56,586: User deleted image with id 10
+WARNING  2020-06-30 15:22:56,654: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:22:56,662: User requested all images
+WARNING  2020-06-30 15:22:56,674: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:22:56,677: User requested file fe378c176698490c8820fe08b08155e5_7399x8039.jpg
+INFO     2020-06-30 15:22:56,682: User requested all images
+WARNING  2020-06-30 15:22:56,705: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:22:56,764: Uploaded file 5125706ce6df44a59a02263be7976c75.png
+INFO     2020-06-30 15:23:34,031: Resized file 5125706ce6df44a59a02263be7976c75_7619x6565.png
+INFO     2020-06-30 15:23:47,334: User deleted image with id 28
+WARNING  2020-06-30 15:23:47,378: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:23:47,387: User requested all images
+WARNING  2020-06-30 15:23:47,399: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:23:47,402: User requested file fff2df7a799c45d0bab40973a87c4a55_3574x4454.jpg
+WARNING  2020-06-30 15:23:47,466: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:23:47,476: Uploaded file cb29e885d4cc4dcb99c841cb4b31e1e1.png
+INFO     2020-06-30 15:24:06,069: Resized file cb29e885d4cc4dcb99c841cb4b31e1e1_6702x8724.png
+INFO     2020-06-30 15:24:28,689: User deleted image with id 81
+WARNING  2020-06-30 15:24:28,748: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:24:28,757: User requested all images
+WARNING  2020-06-30 15:24:28,768: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:24:28,771: User requested file aaaa478d55d64f4ab0b2dcf641c1809c_1226x1899.jpg
+WARNING  2020-06-30 15:24:28,775: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:24:28,832: Uploaded file 8814f2d43c96469e82c5378b0e1eccae.png
+INFO     2020-06-30 15:24:42,987: User deleted image with id 78
+WARNING  2020-06-30 15:24:43,039: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:24:43,047: User requested all images
+WARNING  2020-06-30 15:24:43,062: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:24:43,066: User requested file 15978c857dc44424927fa6023b23255a_704x1584.jpg
+WARNING  2020-06-30 15:24:43,121: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:24:43,133: Uploaded file a378f767a0b54d0e864031f5fa894f94.png
+INFO     2020-06-30 15:24:46,386: Resized file a378f767a0b54d0e864031f5fa894f94_3777x1438.png
+INFO     2020-06-30 15:25:05,234: User deleted image with id 28
+WARNING  2020-06-30 15:25:05,238: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:25:05,243: User requested all images
+WARNING  2020-06-30 15:25:05,256: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:25:05,259: User requested file 07dc025501284fa4984806f360b3851e_6895x7841.jpg
+WARNING  2020-06-30 15:25:05,275: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:25:05,410: Uploaded file 94caa5cce16549e8be2fa1d7a52122eb.png
+INFO     2020-06-30 15:25:27,254: Resized file 94caa5cce16549e8be2fa1d7a52122eb_5131x4353.png
+INFO     2020-06-30 15:25:41,580: User deleted image with id 62
+WARNING  2020-06-30 15:25:41,708: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:25:41,719: User requested all images
+WARNING  2020-06-30 15:25:41,733: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:25:41,735: User requested file d8674b7d28c8419298ddc38f98bf0c91_5604x650.jpg
+WARNING  2020-06-30 15:25:41,743: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:25:41,761: Uploaded file 2195654c246d4dd99eb217cc1b4e450a.png
+INFO     2020-06-30 15:25:42,272: Resized file 2195654c246d4dd99eb217cc1b4e450a_977x694.png
+INFO     2020-06-30 15:25:52,722: User deleted image with id 60
+WARNING  2020-06-30 15:25:52,762: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:25:52,772: User requested all images
+WARNING  2020-06-30 15:25:52,789: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:25:52,792: User requested file 4cb7ebf185a2425b9acf5fa41b6b2b7b_848x9313.jpg
+WARNING  2020-06-30 15:25:52,871: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:25:52,878: Uploaded file a7d02f40068e46bdbadf86c9ea79e18c.png
+INFO     2020-06-30 15:26:06,326: User deleted image with id 66
+WARNING  2020-06-30 15:26:06,362: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:26:06,371: User requested all images
+WARNING  2020-06-30 15:26:06,384: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:26:06,386: User requested file b0d2208712ec4bbb861538f29a9a2ae5_3986x1004.jpg
+WARNING  2020-06-30 15:26:06,395: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:26:06,427: Uploaded file ab790961feab4dc2aea6a14db7c43db4.png
+INFO     2020-06-30 15:26:21,454: Resized file ab790961feab4dc2aea6a14db7c43db4_5596x4871.png
+INFO     2020-06-30 15:26:38,945: User deleted image with id 27
+WARNING  2020-06-30 15:26:38,978: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:26:38,986: User requested all images
+WARNING  2020-06-30 15:26:38,999: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:26:39,002: User requested file 765749814cdd4cdaad790eda7284bcac_1210x3572.jpg
+WARNING  2020-06-30 15:26:39,083: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:26:39,094: Uploaded file 89b413ec38ce4087a8a8bbe2101ca673.png
+INFO     2020-06-30 15:26:46,081: User deleted image with id 54
+WARNING  2020-06-30 15:26:46,183: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:26:46,194: User requested all images
+WARNING  2020-06-30 15:26:46,214: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:26:46,218: User requested file df4caf0973a3441bb089320d0cd33ae3_3882x8190.jpg
+WARNING  2020-06-30 15:26:46,409: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:26:46,458: Uploaded file 46e32b352efd45a8bfbb225e11aef217.png
+INFO     2020-06-30 15:27:00,081: Resized file 46e32b352efd45a8bfbb225e11aef217_7247x4097.png
+INFO     2020-06-30 15:30:17,448: User deleted image with id 55
+WARNING  2020-06-30 15:30:17,483: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:30:17,494: User requested all images
+WARNING  2020-06-30 15:30:17,514: User requested file with id 1000000, but it does not exists.
+WARNING  2020-06-30 15:30:17,537: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:30:17,551: Uploaded file 8a33a17154204f6582f9edfc248703e0.png
+INFO     2020-06-30 15:30:19,862: Resized file 8a33a17154204f6582f9edfc248703e0_1054x9158.png
+INFO     2020-06-30 15:31:25,976: User deleted image with id 45
+WARNING  2020-06-30 15:31:26,250: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:31:26,262: User requested all images
+WARNING  2020-06-30 15:31:26,284: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:31:26,289: User requested file 67c1527651d34cef99de09a7a0160daa_6120x6710.jpg
+WARNING  2020-06-30 15:31:26,337: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:31:26,376: Uploaded file 527d998911e54e529e449c0c0f249108.png
+INFO     2020-06-30 15:31:55,558: Resized file 527d998911e54e529e449c0c0f249108_6278x7526.png
+INFO     2020-06-30 15:32:20,462: User deleted image with id 66
+WARNING  2020-06-30 15:32:20,488: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:32:20,499: User requested all images
+WARNING  2020-06-30 15:32:20,519: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:32:20,523: User requested file a19791caef8c4ae192130ce3022bbaa7_2492x330.jpg
+WARNING  2020-06-30 15:32:20,545: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:32:20,590: Uploaded file 26ec79ff054c430e99560c1e621a21d9.png
+INFO     2020-06-30 15:32:30,381: Resized file 26ec79ff054c430e99560c1e621a21d9_3111x4994.png
+INFO     2020-06-30 15:33:07,129: User deleted image with id 73
+WARNING  2020-06-30 15:33:07,152: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:33:07,162: User requested all images
+WARNING  2020-06-30 15:33:07,182: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:33:07,186: User requested file 7d9c861a3fc243f28a07b414e5ea4599_1603x6702.jpg
+WARNING  2020-06-30 15:33:07,260: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:33:07,368: Uploaded file 99fc50ed078147fdac0b3b88c39c4bf1.png
+INFO     2020-06-30 15:33:20,400: Resized file 99fc50ed078147fdac0b3b88c39c4bf1_8994x3230.png
+INFO     2020-06-30 15:33:38,791: User deleted image with id 58
+WARNING  2020-06-30 15:33:38,814: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:33:38,824: User requested all images
+WARNING  2020-06-30 15:33:38,844: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:33:38,847: User requested file a21cb965ae27471c8bb7b2c6e52a0c0d_9652x9427.jpg
+WARNING  2020-06-30 15:33:38,872: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:33:38,911: Uploaded file 20f0ef4d39744b9a930777ef3a60b22b.png
+INFO     2020-06-30 15:33:45,011: User deleted image with id 6
+WARNING  2020-06-30 15:33:45,147: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:33:45,158: User requested all images
+WARNING  2020-06-30 15:33:45,179: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:33:45,182: User requested file 017416e0625d4623a7300faff76aa842_2218x9070.jpg
+WARNING  2020-06-30 15:33:45,200: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:33:45,334: Uploaded file 37757d5bfff744ce958f9e7838dacca1.png
+INFO     2020-06-30 15:33:46,411: Resized file 37757d5bfff744ce958f9e7838dacca1_296x7040.png
+INFO     2020-06-30 15:49:27,219: User deleted image with id 100
+WARNING  2020-06-30 15:49:27,311: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:49:27,321: User requested all images
+WARNING  2020-06-30 15:49:27,339: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:49:27,342: User requested file 5bff55d8c2df481f98a0dd17e6816039_4839x4967.jpg
+WARNING  2020-06-30 15:49:27,463: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:49:27,488: Uploaded file fc29e5fccdd744c7b6d39304a5d23b41.png
+INFO     2020-06-30 15:49:52,943: Resized file fc29e5fccdd744c7b6d39304a5d23b41_9232x8754.png
+INFO     2020-06-30 15:51:07,756: User deleted image with id 9
+WARNING  2020-06-30 15:51:07,763: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:51:07,771: User requested all images
+WARNING  2020-06-30 15:51:07,788: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:51:07,791: User requested file 017416e0625d4623a7300faff76aa842_2218x9070.jpg
+WARNING  2020-06-30 15:51:07,804: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:51:08,050: Uploaded file 66aef1256ddb4fdd8f6b501928b4ccf8.png
+INFO     2020-06-30 15:51:50,667: User deleted image with id 78
+WARNING  2020-06-30 15:51:50,733: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:51:50,743: User requested all images
+WARNING  2020-06-30 15:51:50,759: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:51:50,762: User requested file a82d8fdb3b534999b9822df305c2d9ba_377x4653.jpg
+WARNING  2020-06-30 15:51:50,779: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:51:50,802: Uploaded file b998937b32c4428ab08487212a4993eb.png
+INFO     2020-06-30 15:52:14,067: Resized file b998937b32c4428ab08487212a4993eb_8343x5139.png
+INFO     2020-06-30 15:52:35,203: User deleted image with id 17
+WARNING  2020-06-30 15:52:35,297: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:52:35,305: User requested all images
+WARNING  2020-06-30 15:52:35,323: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:52:35,327: User requested file 3a8a87b96e854ca199a0dc7621fbdf90_8306x3886.jpg
+WARNING  2020-06-30 15:52:35,358: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:52:35,493: Uploaded file ea39d248795d4e00ae34698511401d59.png
+INFO     2020-06-30 15:52:48,964: Resized file ea39d248795d4e00ae34698511401d59_3509x4706.png
+INFO     2020-06-30 15:53:59,570: User deleted image with id 59
+WARNING  2020-06-30 15:53:59,589: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:53:59,597: User requested all images
+WARNING  2020-06-30 15:53:59,614: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:53:59,617: User requested file 207f7e6bb9d04f15ae0c84f8c55a7d0f_6660x9763.jpg
+WARNING  2020-06-30 15:53:59,831: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:53:59,902: Uploaded file 8cd1700c2dbb4f6a8d39f8f84f7ac677.png
+INFO     2020-06-30 15:54:17,550: Resized file 8cd1700c2dbb4f6a8d39f8f84f7ac677_6832x4314.png
+INFO     2020-06-30 15:55:10,128: User deleted image with id 62
+WARNING  2020-06-30 15:55:10,194: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 15:55:10,204: User requested all images
+WARNING  2020-06-30 15:55:10,221: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 15:55:10,224: User requested file 382d14545b4747c49233da3a42068c13_6134x8726.jpg
+WARNING  2020-06-30 15:55:10,263: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 15:55:10,325: Uploaded file 9e780f9155d0425fb3d0c68fe288d69a.png
+INFO     2020-06-30 15:55:36,593: Resized file 9e780f9155d0425fb3d0c68fe288d69a_6096x8122.png
+INFO     2020-06-30 16:55:27,212: User deleted image with id 43
+WARNING  2020-06-30 16:55:27,234: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 16:55:27,244: User requested all images
+WARNING  2020-06-30 16:55:27,262: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 16:55:27,265: User requested file 7f18601b1954456ea5505c5dc09430a3_2265x6438.jpg
+WARNING  2020-06-30 16:55:27,472: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 16:55:27,686: Uploaded file f902cd72a19545f9ba2e564ada48a7bc.png
+INFO     2020-06-30 16:55:37,651: User deleted image with id 79
+WARNING  2020-06-30 16:55:37,670: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 16:55:37,678: User requested all images
+WARNING  2020-06-30 16:55:37,697: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 16:55:37,700: User requested file 5dff3703dc354f46b4c7f47477f1044d_199x4622.jpg
+WARNING  2020-06-30 16:55:37,725: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 16:55:37,760: Uploaded file f926eaeb31d540daa48320ed061868b6.png
+INFO     2020-06-30 16:55:46,428: User deleted image with id 59
+WARNING  2020-06-30 16:55:46,744: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 16:55:46,754: User requested all images
+WARNING  2020-06-30 16:55:46,770: User requested file with id 1000000, but it does not exists.
+WARNING  2020-06-30 16:55:46,805: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 16:55:46,821: Uploaded file 714762eb12964a79a878644ff65a8e9b.png
+INFO     2020-06-30 16:55:57,981: Resized file 714762eb12964a79a878644ff65a8e9b_5379x6568.png
+INFO     2020-06-30 16:56:27,156: User deleted image with id 38
+WARNING  2020-06-30 16:56:27,236: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 16:56:27,244: User requested all images
+WARNING  2020-06-30 16:56:27,259: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 16:56:27,263: User requested file fe78fd49e0264c0ab2bc8e04b3dcb1f3_2496x1624.jpg
+WARNING  2020-06-30 16:56:27,285: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 16:56:27,292: Uploaded file c3475f4da3b747b4ba9c004736097690.png
+INFO     2020-06-30 16:56:33,731: Resized file c3475f4da3b747b4ba9c004736097690_2948x5700.png
+INFO     2020-06-30 16:56:36,988: User deleted image with id 14
+WARNING  2020-06-30 16:56:37,003: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 16:56:37,009: User requested all images
+WARNING  2020-06-30 16:56:37,022: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 16:56:37,025: User requested file 307bafd6bf31435ba6d6787fa6ab6553_6606x6597.jpg
+WARNING  2020-06-30 16:56:37,028: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 16:56:37,070: Uploaded file 66a1992027134d9c9255ad0f429c7b59.png
+INFO     2020-06-30 16:56:37,768: Resized file 66a1992027134d9c9255ad0f429c7b59_1689x729.png
+INFO     2020-06-30 16:56:43,714: User deleted image with id 32
+WARNING  2020-06-30 16:56:43,734: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 16:56:43,742: User requested all images
+WARNING  2020-06-30 16:56:43,758: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 16:56:43,761: User requested file a79609f8e6964cceba023f0931bd99e1_7385x9352.jpg
+WARNING  2020-06-30 16:56:43,784: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 16:56:43,921: Uploaded file b9689d9f67504f6f910b17dde4ec3afb.png
+INFO     2020-06-30 16:56:44,466: Resized file b9689d9f67504f6f910b17dde4ec3afb_892x216.png
+INFO     2020-06-30 16:57:03,996: User deleted image with id 57
+WARNING  2020-06-30 16:57:04,015: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 16:57:04,023: User requested all images
+WARNING  2020-06-30 16:57:04,041: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 16:57:04,044: User requested file 3cc6a19e07a8425bad0bcdbc588d36b3_4455x3797.jpg
+WARNING  2020-06-30 16:57:04,064: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 16:57:04,078: Uploaded file 807ee8323d0c41399786c3484138772e.png
+INFO     2020-06-30 16:57:05,497: Resized file 807ee8323d0c41399786c3484138772e_1962x1668.png
+INFO     2020-06-30 16:58:27,250: User deleted image with id 54
+WARNING  2020-06-30 16:58:27,333: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 16:58:27,343: User requested all images
+WARNING  2020-06-30 16:58:27,356: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 16:58:27,359: User requested file 51a74091d7804d2996d0214e5ea11fe6_3002x4615.jpg
+WARNING  2020-06-30 16:58:27,368: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 16:58:27,393: Uploaded file 9bbf3578f81346be8e412a427e2b033e.png
+WARNING  2020-06-30 16:58:27,406: User tried to upload file, but didn't provide a file.
+	CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([('width', '8600'), ('height', '6574')])])
+INFO     2020-06-30 16:58:57,737: Resized file 9bbf3578f81346be8e412a427e2b033e_9397x4287.png
+INFO     2020-06-30 16:59:39,156: User deleted image with id 34
+WARNING  2020-06-30 16:59:39,175: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 16:59:39,182: User requested all images
+WARNING  2020-06-30 16:59:39,197: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 16:59:39,200: User requested file 12773a7886854faa9e0cc74d6563b216_6259x2017.jpg
+WARNING  2020-06-30 16:59:39,236: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 16:59:39,247: Uploaded file e5707eab1c394fa4adc5ecc2c8e0a1c4.png
+WARNING  2020-06-30 16:59:39,260: User tried to upload file, but didn't provide a file.
+	CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([('width', '9294'), ('height', '5825')])])
+INFO     2020-06-30 16:59:40,439: Resized file e5707eab1c394fa4adc5ecc2c8e0a1c4_2212x668.png
+INFO     2020-06-30 16:59:48,812: User deleted image with id 85
+WARNING  2020-06-30 16:59:48,951: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 16:59:48,961: User requested all images
+WARNING  2020-06-30 16:59:48,979: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 16:59:48,982: User requested file 7e2f75d529094a92bbdcaa045adf9efb_7010x8589.jpg
+WARNING  2020-06-30 16:59:49,176: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 16:59:49,206: Uploaded file 17f930bd50e845d2931dea98cf9d87a6.png
+WARNING  2020-06-30 16:59:49,221: User tried to upload file, but didn't provide a file.
+	CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([('width', '4491'), ('height', '8010')])])
+INFO     2020-06-30 17:00:18,195: Resized file 17f930bd50e845d2931dea98cf9d87a6_9785x6696.png
+INFO     2020-06-30 17:00:50,738: User deleted image with id 11
+WARNING  2020-06-30 17:00:50,799: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 17:00:50,810: User requested all images
+WARNING  2020-06-30 17:00:50,828: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 17:00:50,831: User requested file 017416e0625d4623a7300faff76aa842_2218x9070.jpg
+WARNING  2020-06-30 17:00:50,915: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 17:00:50,994: Uploaded file 76335d895e564ea68a7e33462abda42b.png
+WARNING  2020-06-30 17:00:51,009: User tried to upload file, but didn't provide a file.
+	CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([('width', '6498'), ('height', '9097')])])
+INFO     2020-06-30 17:00:56,099: Resized file 76335d895e564ea68a7e33462abda42b_2985x1970.png
+INFO     2020-06-30 17:01:18,367: User deleted image with id 45
+WARNING  2020-06-30 17:01:18,386: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 17:01:18,394: User requested all images
+WARNING  2020-06-30 17:01:18,411: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 17:01:18,414: User requested file c40920022b894bfc8c1dac1241f4c561_6660x2567.jpg
+WARNING  2020-06-30 17:01:18,428: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 17:01:18,463: Uploaded file 52176aae2b4842939aed8511345012af.png
+WARNING  2020-06-30 17:01:18,482: User tried to upload file, but didn't provide a file.
+	CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([('width', '1335'), ('height', '8863')])])
+INFO     2020-06-30 17:01:21,911: Resized file 52176aae2b4842939aed8511345012af_8380x928.png
+INFO     2020-06-30 17:06:10,969: User deleted image with id 70
+WARNING  2020-06-30 17:06:11,079: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 17:06:11,090: User requested all images
+WARNING  2020-06-30 17:06:11,108: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 17:06:11,111: User requested file 19eb0f91ec7a448fbbec98b53996f5b9_9588x9380.jpg
+WARNING  2020-06-30 17:06:11,200: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 17:06:11,450: Uploaded file d909dbf5da6e400e8dd78c27ed62a5a4.png
+WARNING  2020-06-30 17:06:11,469: User tried to upload file, but didn't provide a file.
+	CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([('width', '7510'), ('height', '6373')])])
+WARNING  2020-06-30 17:06:11,555: User tried to upload file, but provided not allowed height
+	http://localhost/upload
+WARNING  2020-06-30 17:06:11,608: User tried to upload file, but provided not allowed width
+INFO     2020-06-30 17:06:59,512: Resized file d909dbf5da6e400e8dd78c27ed62a5a4_9515x5545.png
+INFO     2020-06-30 17:09:55,404: User deleted image with id 2
+WARNING  2020-06-30 17:09:55,505: User tried to upload file, but it was not a png/jpg image: test_image.txt
+INFO     2020-06-30 17:09:55,517: User requested all images
+WARNING  2020-06-30 17:09:55,539: User requested file with id 1000000, but it does not exists.
+INFO     2020-06-30 17:09:55,546: User requested file 3cc6a19e07a8425bad0bcdbc588d36b3_4455x3797.jpg
+WARNING  2020-06-30 17:09:55,603: User tried to upload file, but didn't provide width or height.
+INFO     2020-06-30 17:09:55,615: Uploaded file 68e94b3884bd47cf9459ef682b3b3f37.png
+WARNING  2020-06-30 17:09:55,633: User tried to upload file, but didn't provide a file.
+	CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([('width', '9700'), ('height', '8466')])])
+WARNING  2020-06-30 17:09:55,643: User tried to upload file, but provided not allowed height
+	http://localhost/upload
+WARNING  2020-06-30 17:09:55,658: User tried to upload file, but provided not allowed width
+INFO     2020-06-30 17:10:02,543: Resized file 68e94b3884bd47cf9459ef682b3b3f37_3239x3408.png

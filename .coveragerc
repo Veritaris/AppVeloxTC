@@ -1,0 +1,17 @@
+[run]
+    omit = venv/*
+
+[report]
+    exclude_lines =
+        def get_image
+        if __name__ == "__main__":
+        def __repr__:
+        except RequestEntityTooLarge:
+        except Exception as e:
+
+[json]
+    output = TestResults/result.json
+    pretty_print = True
+
+[html]
+    directory = TestResults/html

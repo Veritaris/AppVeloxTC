@@ -18,5 +18,7 @@ jobs:
           username: ${{ secrets.USER }}
           privateKey: ${{ secrets.KEY }}
 
-
-#  ![CI](https://github.com/Veritaris/AppVeloxTC/workflows/CI/badge.svg?branch=master)
+      - name: Coveralls GitHub Action
+        uses: coverallsapp/github-action@v1.1.1
+        with:
+          github-token: ${{ secrets.TOKEN }}

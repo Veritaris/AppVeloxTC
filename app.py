@@ -68,13 +68,13 @@ def show_images(image_id):
     return Resizer.show_resized_images(image_id)
 
 
-@app.route("/upload/<string:image_name>", methods=["GET"])
-def show_image(image_name):
-    """
-    Render image with filename if it exists on server
-    :param image_name: image filename on server
-    """
-    return Resizer.get_image(image_name)
+# @app.route("/upload/<string:image_name>", methods=["GET"])
+# def show_image(image_name):
+#     """
+#     Render image with filename if it exists on server
+#     :param image_name: image filename on server
+#     """
+#     return Resizer.get_image(image_name)
 
 
 @app.route("/upload/<int:image_id>", methods=["DELETE"])
@@ -90,4 +90,5 @@ def show_404(error):
     """
     Render error page if user tries to visit page that does not exists
     """
-    return render_template("error.html", page=request.base_url.split("//")[-1])
+    return jsonify({"error": "No such file or page"}), 404
+    # return render_template("error.html", page=request.base_url.split("//")[-1])
