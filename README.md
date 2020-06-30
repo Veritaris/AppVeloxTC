@@ -1,5 +1,5 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Veritaris/AppVeloxTC/CI)
-[![Coverage Status](https://coveralls.io/repos/github/Veritaris/AppVeloxTC/badge.svg?branch=master)](https://coveralls.io/github/Veritaris/AppVeloxTC?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/Veritaris/AppVeloxTC/badge.svg?branch=develop)](https://coveralls.io/github/Veritaris/AppVeloxTC?branch=master)
 
 Hi. This is a test case for AppVelox company to test my skills.
 This is a simple flask based web-application to resize images.
