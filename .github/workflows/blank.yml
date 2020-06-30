@@ -17,4 +17,3 @@ jobs:
           pip3 install setuptools
           pip3 install -r requirements.txt
           pip3 install coveralls
-          COVERALLS_REPO_TOKEN=${{ secrets.COVERALLS }} coveralls
