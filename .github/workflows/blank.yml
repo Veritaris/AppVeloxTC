@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Install requirements
         run: |
+          git pull https://github.com/Veritaris/AppVeloxTC.git
+          cd AppVeloxTC
           pip3 install -r requirements.txt
           coverage run -m unittest discover
           COVERALLS_REPO_TOKEN=${{ secrets.COVERALLS }} coveralls
