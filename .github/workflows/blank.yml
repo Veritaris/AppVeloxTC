@@ -8,15 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-18.04
-        
-    steps:
-      - name: start deploy script via ssh
-        uses: garygrossgarten/github-action-ssh@release
-        with:
-          command: ./deploy.sh
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
-          privateKey: ${{ secrets.KEY }}
+
+
 
       - name: Install requirements
         run: |
