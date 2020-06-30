@@ -18,7 +18,8 @@ jobs:
           username: ${{ secrets.USER }}
           privateKey: ${{ secrets.KEY }}
 
-      - name: Coveralls GitHub Action
-        uses: coverallsapp/github-action@v1.1.1
-        with:
-          github-token: ${{ secrets.TOKEN }}
+      - name: Install requirements
+        run: |
+          pip3 install -r requirements.txt
+          coverage run -m unittest discover
+          COVERALLS_REPO_TOKEN=${{ secrets.COVERALLS }} coveralls

@@ -5,7 +5,7 @@
     exclude_lines =
         def get_image
         if __name__ == "__main__":
-        def __repr__:
+        def __repr__(self):
         except RequestEntityTooLarge:
         except Exception as e:
 
