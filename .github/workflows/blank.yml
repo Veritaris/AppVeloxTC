@@ -14,5 +14,5 @@ jobs:
         with:
           command: ./deploy.sh
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
+          username: ${{ secrets.USER }}
           privateKey: ${{ secrets.KEY }}
